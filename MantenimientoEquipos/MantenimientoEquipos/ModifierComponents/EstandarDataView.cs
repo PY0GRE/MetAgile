@@ -24,14 +24,14 @@ namespace MantenimientoEquipos.ModifierComponents
             // Estilo del encabezado
             this.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(41, 128, 185); // Azul
             this.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            this.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            this.ColumnHeadersDefaultCellStyle.Font = new Font("Calibri", 10, FontStyle.Bold);
             this.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             this.ColumnHeadersHeight = 35;
 
             // Estilo de celdas
             this.DefaultCellStyle.BackColor = Color.White;
             this.DefaultCellStyle.ForeColor = Color.Black;
-            this.DefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Regular);
+            this.DefaultCellStyle.Font = new Font("Calibri", 10, FontStyle.Regular);
             this.DefaultCellStyle.SelectionBackColor = Color.LightBlue;
             this.DefaultCellStyle.SelectionForeColor = Color.Black;
             this.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;

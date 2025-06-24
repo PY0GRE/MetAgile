@@ -52,6 +52,9 @@
     <Compile Include="EstandarizacionComponentes.Designer.cs">
       <DependentUpon>EstandarizacionComponentes.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModifierComponents\EstadarComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ModifierComponents\EstandarDataView.cs">
       <SubType>Component</SubType>
     </Compile>
