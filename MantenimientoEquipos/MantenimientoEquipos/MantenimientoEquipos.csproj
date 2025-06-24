@@ -79,17 +79,47 @@
     <Compile Include="Views\CRUDAreas\AreasView.Designer.cs">
       <DependentUpon>AreasView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CRUDAreas\MenuAreasView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CRUDAreas\MenuAreasView.Designer.cs">
+      <DependentUpon>MenuAreasView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CRUDDevices\DevicesView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\CRUDDevices\DevicesView.Designer.cs">
       <DependentUpon>DevicesView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CRUDDevices\MenuDevicesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CRUDDevices\MenuDevicesView.Designer.cs">
+      <DependentUpon>MenuDevicesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CRUDMaintenance\MaintenanceView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CRUDMaintenance\MaintenanceView.Designer.cs">
+      <DependentUpon>MaintenanceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CRUDRoles\MenuRolesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CRUDRoles\MenuRolesView.Designer.cs">
+      <DependentUpon>MenuRolesView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CRUDRoles\RolesView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\CRUDRoles\RolesView.Designer.cs">
       <DependentUpon>RolesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CRUDUsers\MenuUsersView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CRUDUsers\MenuUsersView.Designer.cs">
+      <DependentUpon>MenuUsersView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\CRUDUsers\UsersView.cs">
       <SubType>Form</SubType>
@@ -108,6 +138,12 @@
     </Compile>
     <Compile Include="Views\MainMenuView.Designer.cs">
       <DependentUpon>MainMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CRUDMaintenance\MenuMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CRUDMaintenance\MenuMaintenance.Designer.cs">
+      <DependentUpon>MenuMaintenance.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="EstandarizacionComponentes.resx">
       <DependentUpon>EstandarizacionComponentes.cs</DependentUpon>
