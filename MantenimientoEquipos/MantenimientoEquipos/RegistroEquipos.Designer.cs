@@ -88,7 +88,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(627, 263);
+            this.btnGuardar.Location = new System.Drawing.Point(636, 249);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(152, 44);
             this.btnGuardar.TabIndex = 7;
