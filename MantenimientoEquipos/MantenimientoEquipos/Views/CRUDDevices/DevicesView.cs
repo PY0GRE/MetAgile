@@ -15,6 +15,23 @@ namespace MantenimientoEquipos.Views.CRUDDevices
         public DevicesView()
         {
             InitializeComponent();
+
+            // Creacion de Holders
+
+            PlaceholderHelper.SetPlaceholder(txtSerieNum, "Número de serie del dispositivo");
+            PlaceholderHelper.SetPlaceholder(txtModel, "Modelo del dispositivo");
+        }
+
+        private void bttAccept_Click(object sender, EventArgs e)
+        {
+            new MenuDevicesView().Show();
+            this.Hide();
+        }
+
+        private void bttCancel_Click(object sender, EventArgs e)
+        {
+            new MenuDevicesView().Show();
+            this.Hide();
         }
     }
 }

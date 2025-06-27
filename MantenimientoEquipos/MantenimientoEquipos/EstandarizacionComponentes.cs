@@ -23,6 +23,8 @@ namespace MantenimientoEquipos
 
             // No es contraseña
             PlaceholderHelper.SetPlaceholder(estandarTextBox2, "placeHolder2");
+
+            PlaceholderHelper.SetPlaceholder(estandarTextBox3, "placeHolder3");
         }
 
         string Con = "Data Source=LAPTOP-P6SV6G8N;Initial Catalog=Proba;Integrated Security=True;Encrypt=False";
