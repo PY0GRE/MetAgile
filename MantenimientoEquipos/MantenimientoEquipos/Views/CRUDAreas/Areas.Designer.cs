@@ -33,7 +33,6 @@
             this.estandarLabel2 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.estandarTextBox2 = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
             this.estandarTextBox1 = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
-            this.Aceptar = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.estandarLabel3 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.estandarLabel4 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.estandarTextBox3 = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
@@ -97,20 +96,6 @@
             this.estandarTextBox1.Size = new System.Drawing.Size(289, 27);
             this.estandarTextBox1.TabIndex = 15;
             // 
-            // Aceptar
-            // 
-            this.Aceptar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Aceptar.BorderRadius = 20;
-            this.Aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Aceptar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Aceptar.ForeColor = System.Drawing.Color.White;
-            this.Aceptar.Location = new System.Drawing.Point(553, 394);
-            this.Aceptar.Name = "Aceptar";
-            this.Aceptar.Size = new System.Drawing.Size(83, 36);
-            this.Aceptar.TabIndex = 14;
-            this.Aceptar.Text = "Aceptar";
-            this.Aceptar.UseVisualStyleBackColor = false;
-            // 
             // estandarLabel3
             // 
             this.estandarLabel3.AutoSize = true;
@@ -168,7 +153,6 @@
             this.Controls.Add(this.estandarLabel2);
             this.Controls.Add(this.estandarTextBox2);
             this.Controls.Add(this.estandarTextBox1);
-            this.Controls.Add(this.Aceptar);
             this.Controls.Add(this.estandarTitleLabel1);
             this.Name = "Areas";
             this.Text = "Areas";
@@ -184,7 +168,6 @@
         private ModifierComponents.EstandarLabel estandarLabel2;
         private ModifierComponents.EstandarTextBox estandarTextBox2;
         private ModifierComponents.EstandarTextBox estandarTextBox1;
-        private ModifierComponents.EstandarButton Aceptar;
         private ModifierComponents.EstandarLabel estandarLabel3;
         private ModifierComponents.EstandarLabel estandarLabel4;
         private ModifierComponents.EstandarTextBox estandarTextBox3;
