@@ -55,7 +55,9 @@
     <Compile Include="ModifierComponents\EstandarLabel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ModifierComponents\EstandarRichTextBox.cs" />
+    <Compile Include="ModifierComponents\EstandarRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ModifierComponents\EstandarTextBox.cs">
       <SubType>Component</SubType>
     </Compile>

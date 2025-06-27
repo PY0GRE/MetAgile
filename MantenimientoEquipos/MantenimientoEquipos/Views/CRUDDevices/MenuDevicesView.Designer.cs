@@ -28,24 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.estandarTitleLabel1 = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bttAdd = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.bttReturn = new MantenimientoEquipos.ModifierComponents.EstandarButton();
+            this.bttAdd = new MantenimientoEquipos.ModifierComponents.EstandarButton();
+            this.estandarTitleLabel1 = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // estandarTitleLabel1
-            // 
-            this.estandarTitleLabel1.AutoSize = true;
-            this.estandarTitleLabel1.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estandarTitleLabel1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.estandarTitleLabel1.Location = new System.Drawing.Point(31, 33);
-            this.estandarTitleLabel1.Margin = new System.Windows.Forms.Padding(10);
-            this.estandarTitleLabel1.Name = "estandarTitleLabel1";
-            this.estandarTitleLabel1.Size = new System.Drawing.Size(222, 49);
-            this.estandarTitleLabel1.TabIndex = 0;
-            this.estandarTitleLabel1.Text = "Dispositivos";
             // 
             // dataGridView1
             // 
@@ -54,6 +42,21 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1007, 320);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // bttReturn
+            // 
+            this.bttReturn.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttReturn.BorderRadius = 20;
+            this.bttReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttReturn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttReturn.ForeColor = System.Drawing.Color.White;
+            this.bttReturn.Location = new System.Drawing.Point(930, 33);
+            this.bttReturn.Name = "bttReturn";
+            this.bttReturn.Size = new System.Drawing.Size(117, 35);
+            this.bttReturn.TabIndex = 3;
+            this.bttReturn.Text = "Regresar";
+            this.bttReturn.UseVisualStyleBackColor = false;
+            this.bttReturn.Click += new System.EventHandler(this.bttReturn_Click);
             // 
             // bttAdd
             // 
@@ -70,20 +73,17 @@
             this.bttAdd.UseVisualStyleBackColor = false;
             this.bttAdd.Click += new System.EventHandler(this.bttAdd_Click);
             // 
-            // bttReturn
+            // estandarTitleLabel1
             // 
-            this.bttReturn.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bttReturn.BorderRadius = 20;
-            this.bttReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttReturn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttReturn.ForeColor = System.Drawing.Color.White;
-            this.bttReturn.Location = new System.Drawing.Point(930, 33);
-            this.bttReturn.Name = "bttReturn";
-            this.bttReturn.Size = new System.Drawing.Size(117, 35);
-            this.bttReturn.TabIndex = 3;
-            this.bttReturn.Text = "Regresar";
-            this.bttReturn.UseVisualStyleBackColor = false;
-            this.bttReturn.Click += new System.EventHandler(this.bttReturn_Click);
+            this.estandarTitleLabel1.AutoSize = true;
+            this.estandarTitleLabel1.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estandarTitleLabel1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.estandarTitleLabel1.Location = new System.Drawing.Point(31, 33);
+            this.estandarTitleLabel1.Margin = new System.Windows.Forms.Padding(10);
+            this.estandarTitleLabel1.Name = "estandarTitleLabel1";
+            this.estandarTitleLabel1.Size = new System.Drawing.Size(222, 49);
+            this.estandarTitleLabel1.TabIndex = 0;
+            this.estandarTitleLabel1.Text = "Dispositivos";
             // 
             // MenuDevicesView
             // 
