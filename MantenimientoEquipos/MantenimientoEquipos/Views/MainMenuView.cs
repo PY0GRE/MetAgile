@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MantenimientoEquipos.Views.CRUDDevices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace MantenimientoEquipos.Views
         public MainMenuView()
         {
             InitializeComponent();
+        }
+
+        private void bttDevices_Click(object sender, EventArgs e)
+        {
+            new MenuDevicesView().Show();
+            this.Hide();
         }
     }
 }

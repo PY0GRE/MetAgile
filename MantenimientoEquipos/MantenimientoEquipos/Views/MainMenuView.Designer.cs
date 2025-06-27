@@ -61,6 +61,7 @@
             this.bttDevices.TabIndex = 1;
             this.bttDevices.Text = "Dispositivos";
             this.bttDevices.UseVisualStyleBackColor = false;
+            this.bttDevices.Click += new System.EventHandler(this.bttDevices_Click);
             // 
             // bttMenteinnance
             // 

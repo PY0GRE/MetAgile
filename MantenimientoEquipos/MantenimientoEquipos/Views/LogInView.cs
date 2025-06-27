@@ -23,6 +23,7 @@ namespace MantenimientoEquipos.Views
         private void bttAccept_Click(object sender, EventArgs e)
         {
             new MainMenuView().Show();
+            this.Hide();
         }
     }
 }

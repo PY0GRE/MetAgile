@@ -183,13 +183,18 @@
     <EmbeddedResource Include="RegistroEquipos.resx">
       <DependentUpon>RegistroEquipos.cs</DependentUpon>
     </EmbeddedResource>
-
+    <EmbeddedResource Include="Views\CRUDDevices\DevicesView.resx">
+      <DependentUpon>DevicesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDDevices\MenuDevicesView.resx">
+      <DependentUpon>MenuDevicesView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LogInView.resx">
       <DependentUpon>LogInView.cs</DependentUpon>
     </EmbeddedResource>
-	  <EmbeddedResource Include="Views\MainMenuView.resx">
-		  <DependentUpon>MainMenuView.cs</DependentUpon>
-	  </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainMenuView.resx">
+      <DependentUpon>MainMenuView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CRUDUsers\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>

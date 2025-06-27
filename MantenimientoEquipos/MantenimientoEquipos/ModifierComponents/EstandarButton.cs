@@ -38,6 +38,7 @@ namespace MantenimientoEquipos.ModifierComponents
             this.BackColor = SystemColors.MenuHighlight;
             this.ForeColor = Color.White;
             this.FlatStyle = FlatStyle.Flat;
+            Height = 35;
         }
     }
 }

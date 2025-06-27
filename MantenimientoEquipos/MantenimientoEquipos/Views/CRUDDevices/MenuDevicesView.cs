@@ -16,5 +16,17 @@ namespace MantenimientoEquipos.Views.CRUDDevices
         {
             InitializeComponent();
         }
+
+        private void bttAdd_Click(object sender, EventArgs e)
+        {
+            new DevicesView().Show();
+            this.Hide();
+        }
+
+        private void bttReturn_Click(object sender, EventArgs e)
+        {
+            new MainMenuView().Show();
+            this.Hide();
+        }
     }
 }
