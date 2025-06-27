@@ -152,9 +152,6 @@
     <Compile Include="Views\CRUDMaintenance\MenuMaintenance.Designer.cs">
       <DependentUpon>MenuMaintenance.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="EstandarizacionComponentes.resx">
-      <DependentUpon>EstandarizacionComponentes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
