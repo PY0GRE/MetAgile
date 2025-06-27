@@ -16,5 +16,10 @@ namespace MantenimientoEquipos.Views.CRUDRoles
         {
             InitializeComponent();
         }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
