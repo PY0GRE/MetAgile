@@ -89,5 +89,43 @@ namespace MantenimientoEquipos
                 textBox.UseSystemPasswordChar = false; // Cambia a modo texto normal
             }
         }
+
+        /// <summary>
+        /// Establece un placeholder para un EstandarTextBox.
+        /// </summary>
+        /// <param name="textBox">Nombre del componente</param>
+        /// <param name="placeholder">Texto deseado para poner de  placeholder</param>
+        public static void SetRichPlaceholder(EstandarRichTextBox textBox, string placeholder)
+        {
+            textBox.Tag = placeholder; // Guarda el placeholder individual en la propiedad Tag
+            textBox.ForeColor = Color.Gray;
+            textBox.Text = placeholder;
+
+            textBox.Enter -= RemoveRichPlaceholder;
+            textBox.Leave -= ApplyRichPlaceholder;
+
+            textBox.Enter += RemoveRichPlaceholder;
+            textBox.Leave += ApplyRichPlaceholder;
+        }
+
+        private static void RemoveRichPlaceholder(object sender, EventArgs e)
+        {
+            var textBox = sender as EstandarRichTextBox;
+            if ( textBox != null && textBox.Text == ( string ) textBox.Tag )
+            {
+                textBox.Text = "";
+                textBox.ForeColor = Color.Black;
+            }
+        }
+
+        private static void ApplyRichPlaceholder(object sender, EventArgs e)
+        {
+            var textBox = sender as EstandarRichTextBox;
+            if ( textBox != null && string.IsNullOrWhiteSpace(textBox.Text) )
+            {
+                textBox.Text = ( string ) textBox.Tag;
+                textBox.ForeColor = Color.Gray;
+            }
+        }
     }
 }

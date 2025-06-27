@@ -163,6 +163,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\CRUDAreas\Areas.resx">
+      <DependentUpon>Areas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CRUDDevices\DevicesView.resx">
       <DependentUpon>DevicesView.cs</DependentUpon>
     </EmbeddedResource>

@@ -20,6 +20,7 @@ namespace MantenimientoEquipos.Views.CRUDDevices
 
             PlaceholderHelper.SetPlaceholder(txtSerieNum, "Número de serie del dispositivo");
             PlaceholderHelper.SetPlaceholder(txtModel, "Modelo del dispositivo");
+            PlaceholderHelper.SetRichPlaceholder(rtxt1, "Mucho texto waaaaa");
         }
 
         private void bttAccept_Click(object sender, EventArgs e)
