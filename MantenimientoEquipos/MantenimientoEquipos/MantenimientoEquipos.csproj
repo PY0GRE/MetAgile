@@ -183,6 +183,9 @@
     <EmbeddedResource Include="RegistroEquipos.resx">
       <DependentUpon>RegistroEquipos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDAreas\Areas.resx">
+      <DependentUpon>Areas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CRUDUsers\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
