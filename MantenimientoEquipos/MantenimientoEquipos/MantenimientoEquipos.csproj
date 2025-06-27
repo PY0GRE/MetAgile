@@ -138,6 +138,12 @@
     <Compile Include="Views\CRUDUsers\UsersView.Designer.cs">
       <DependentUpon>UsersView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CRUDUsers\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CRUDUsers\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LogInView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </Compile>
     <EmbeddedResource Include="RegistroEquipos.resx">
       <DependentUpon>RegistroEquipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDUsers\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ProbaDataSet.xsc">
       <DependentUpon>ProbaDataSet.xsd</DependentUpon>
