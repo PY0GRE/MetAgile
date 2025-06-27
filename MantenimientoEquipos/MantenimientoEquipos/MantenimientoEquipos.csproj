@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarRoles.Designer.cs">
+      <DependentUpon>AgregarRoles.cs</DependentUpon>
+    </Compile>
     <Compile Include="EstandarizacionComponentes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     <Compile Include="Views\CRUDMaintenance\MenuMaintenance.Designer.cs">
       <DependentUpon>MenuMaintenance.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AgregarRoles.resx">
+      <DependentUpon>AgregarRoles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EstandarizacionComponentes.resx">
       <DependentUpon>EstandarizacionComponentes.cs</DependentUpon>
     </EmbeddedResource>
