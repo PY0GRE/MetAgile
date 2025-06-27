@@ -15,6 +15,14 @@ namespace MantenimientoEquipos.Views
         public LogInView()
         {
             InitializeComponent();
+
+            PlaceholderHelper.SetPlaceholder(txtUser, "Usuario");
+            PlaceholderHelper.SetPlaceholder(txtPassword, "Contraseña", true);
+        }
+
+        private void bttAccept_Click(object sender, EventArgs e)
+        {
+            new MainMenuView().Show();
         }
     }
 }

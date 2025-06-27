@@ -20,7 +20,7 @@ namespace MantenimientoEquipos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EstandarizacionComponentes());
+            Application.Run(new LogInView());
         }
     }
 }
