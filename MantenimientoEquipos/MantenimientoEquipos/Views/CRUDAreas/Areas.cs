@@ -17,9 +17,9 @@ namespace MantenimientoEquipos.Views.CRUDAreas
             InitializeComponent();
         }
 
-        private void estandarTitleLabel1_Click(object sender, EventArgs e)
-        {
+     
+        
 
         }
     }
-}
+

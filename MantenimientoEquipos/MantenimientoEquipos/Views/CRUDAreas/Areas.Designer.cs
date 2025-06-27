@@ -50,7 +50,7 @@
             this.estandarTitleLabel1.Size = new System.Drawing.Size(238, 49);
             this.estandarTitleLabel1.TabIndex = 13;
             this.estandarTitleLabel1.Text = "Agregar Area";
-            this.estandarTitleLabel1.Click += new System.EventHandler(this.estandarTitleLabel1_Click);
+ 
             // 
             // estandarLabel1
             // 
