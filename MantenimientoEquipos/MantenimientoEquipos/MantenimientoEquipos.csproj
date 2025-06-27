@@ -84,6 +84,12 @@
     <Compile Include="RegistroEquipos.Designer.cs">
       <DependentUpon>RegistroEquipos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CRUDAreas\Areas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CRUDAreas\Areas.Designer.cs">
+      <DependentUpon>Areas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CRUDAreas\AreasView.cs">
       <SubType>Form</SubType>
     </Compile>
