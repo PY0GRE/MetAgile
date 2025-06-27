@@ -172,6 +172,9 @@
     <EmbeddedResource Include="Views\CRUDDevices\MenuDevicesView.resx">
       <DependentUpon>MenuDevicesView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDRoles\MenuRolesView.resx">
+      <DependentUpon>MenuRolesView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LogInView.resx">
       <DependentUpon>LogInView.cs</DependentUpon>
     </EmbeddedResource>
