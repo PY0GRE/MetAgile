@@ -76,6 +76,7 @@
             this.bttMenteinnance.TabIndex = 2;
             this.bttMenteinnance.Text = "Reportes / Mantenimientos";
             this.bttMenteinnance.UseVisualStyleBackColor = false;
+            this.bttMenteinnance.Click += new System.EventHandler(this.bttMenteinnance_Click);
             // 
             // bttAreas
             // 

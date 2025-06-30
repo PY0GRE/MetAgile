@@ -100,6 +100,12 @@
     <Compile Include="Views\CRUDDevices\MenuDevicesView.Designer.cs">
       <DependentUpon>MenuDevicesView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CRUDDevices\UpdateDevicesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CRUDDevices\UpdateDevicesView.Designer.cs">
+      <DependentUpon>UpdateDevicesView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CRUDMaintenance\MaintenanceAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,12 @@
     </Compile>
     <Compile Include="Views\CRUDRoles\RolesView.Designer.cs">
       <DependentUpon>RolesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CRUDRoles\UpdateRolesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CRUDRoles\UpdateRolesView.Designer.cs">
+      <DependentUpon>UpdateRolesView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\CRUDUsers\MenuUsersView.cs">
       <SubType>Form</SubType>

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.estandarTitleLabel1 = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
+            this.lblTitle = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
             this.estandarLabel1 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.estandarLabel2 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.estadarComboBox1 = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
@@ -36,24 +36,24 @@
             this.estadarComboBox2 = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
             this.txtSerieNum = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
             this.estandarLabel4 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
-            this.estadarComboBox3 = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
+            this.cmbMarca = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
             this.estandarLabel5 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.txtModel = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
             this.bttAccept = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.bttCancel = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.SuspendLayout();
             // 
-            // estandarTitleLabel1
+            // lblTitle
             // 
-            this.estandarTitleLabel1.AutoSize = true;
-            this.estandarTitleLabel1.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estandarTitleLabel1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.estandarTitleLabel1.Location = new System.Drawing.Point(19, 19);
-            this.estandarTitleLabel1.Margin = new System.Windows.Forms.Padding(10);
-            this.estandarTitleLabel1.Name = "estandarTitleLabel1";
-            this.estandarTitleLabel1.Size = new System.Drawing.Size(360, 49);
-            this.estandarTitleLabel1.TabIndex = 0;
-            this.estandarTitleLabel1.Text = "Creación Dispositivo";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblTitle.Location = new System.Drawing.Point(19, 19);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(10);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(360, 49);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Creación Dispositivo";
             // 
             // estandarLabel1
             // 
@@ -133,15 +133,15 @@
             this.estandarLabel4.TabIndex = 7;
             this.estandarLabel4.Text = "Número de Serie";
             // 
-            // estadarComboBox3
+            // cmbMarca
             // 
-            this.estadarComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.estadarComboBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estadarComboBox3.FormattingEnabled = true;
-            this.estadarComboBox3.Location = new System.Drawing.Point(24, 228);
-            this.estadarComboBox3.Name = "estadarComboBox3";
-            this.estadarComboBox3.Size = new System.Drawing.Size(167, 27);
-            this.estadarComboBox3.TabIndex = 9;
+            this.cmbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMarca.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMarca.FormattingEnabled = true;
+            this.cmbMarca.Location = new System.Drawing.Point(24, 228);
+            this.cmbMarca.Name = "cmbMarca";
+            this.cmbMarca.Size = new System.Drawing.Size(167, 27);
+            this.cmbMarca.TabIndex = 9;
             // 
             // estandarLabel5
             // 
@@ -205,7 +205,7 @@
             this.Controls.Add(this.bttAccept);
             this.Controls.Add(this.txtModel);
             this.Controls.Add(this.estandarLabel5);
-            this.Controls.Add(this.estadarComboBox3);
+            this.Controls.Add(this.cmbMarca);
             this.Controls.Add(this.txtSerieNum);
             this.Controls.Add(this.estandarLabel4);
             this.Controls.Add(this.estadarComboBox2);
@@ -213,7 +213,7 @@
             this.Controls.Add(this.estadarComboBox1);
             this.Controls.Add(this.estandarLabel2);
             this.Controls.Add(this.estandarLabel1);
-            this.Controls.Add(this.estandarTitleLabel1);
+            this.Controls.Add(this.lblTitle);
             this.Name = "DevicesView";
             this.Text = "DevicesView";
             this.ResumeLayout(false);
@@ -223,7 +223,7 @@
 
         #endregion
 
-        private ModifierComponents.EstandarTitleLabel estandarTitleLabel1;
+        private ModifierComponents.EstandarTitleLabel lblTitle;
         private ModifierComponents.EstandarLabel estandarLabel1;
         private ModifierComponents.EstandarLabel estandarLabel2;
         private ModifierComponents.EstadarComboBox estadarComboBox1;
@@ -231,7 +231,7 @@
         private ModifierComponents.EstadarComboBox estadarComboBox2;
         private ModifierComponents.EstandarTextBox txtSerieNum;
         private ModifierComponents.EstandarLabel estandarLabel4;
-        private ModifierComponents.EstadarComboBox estadarComboBox3;
+        private ModifierComponents.EstadarComboBox cmbMarca;
         private ModifierComponents.EstandarLabel estandarLabel5;
         private ModifierComponents.EstandarTextBox txtModel;
         private ModifierComponents.EstandarButton bttAccept;

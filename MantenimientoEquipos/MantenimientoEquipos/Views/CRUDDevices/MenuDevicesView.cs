@@ -19,13 +19,19 @@ namespace MantenimientoEquipos.Views.CRUDDevices
 
         private void bttAdd_Click(object sender, EventArgs e)
         {
-            new DevicesView().Show();
+            new DevicesView("Agregar").Show();
             this.Hide();
         }
 
         private void bttReturn_Click(object sender, EventArgs e)
         {
             new MainMenuView().Show();
+            this.Hide();
+        }
+
+        private void bttUpdate_Click(object sender, EventArgs e)
+        {
+            new DevicesView("Modificar").Show();
             this.Hide();
         }
     }

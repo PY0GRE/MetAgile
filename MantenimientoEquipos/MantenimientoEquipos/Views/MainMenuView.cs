@@ -23,5 +23,11 @@ namespace MantenimientoEquipos.Views
             new MenuDevicesView().Show();
             this.Hide();
         }
+
+        private void bttMenteinnance_Click(object sender, EventArgs e)
+        {
+            new MenuMaintenance().Show();
+            this.Hide();
+        }
     }
 }
