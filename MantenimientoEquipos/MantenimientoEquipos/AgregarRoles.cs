@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MantenimientoEquipos.Views.CRUDAreas
+namespace MantenimientoEquipos
 {
-    public partial class Areas : Form
+    public partial class AgregarRoles : Form
     {
-        public Areas()
+        public AgregarRoles()
         {
             InitializeComponent();
         }
-
-     
-        
-
-        }
     }
-
+}

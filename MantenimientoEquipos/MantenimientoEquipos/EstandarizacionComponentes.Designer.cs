@@ -373,6 +373,174 @@
             this.Aceptar.UseVisualStyleBackColor = false;
             this.Aceptar.Click += new System.EventHandler(this.Aceptar_Click);
             // 
+            // probaDataSet
+            // 
+            this.probaDataSet.DataSetName = "ProbaDataSet";
+            this.probaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // todoBindingSource
+            // 
+            this.todoBindingSource.DataMember = "Todo";
+            this.todoBindingSource.DataSource = this.probaDataSet;
+            // 
+            // todoTableAdapter
+            // 
+            this.todoTableAdapter.ClearBeforeFill = true;
+            // 
+            // probaDataSet1
+            // 
+            this.probaDataSet1.DataSetName = "ProbaDataSet";
+            this.probaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // estandarDataView1
+            // 
+            this.estandarDataView1.AutoGenerateColumns = false;
+            this.estandarDataView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.estandarDataView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.data1DataGridViewTextBoxColumn1,
+            this.data2DataGridViewTextBoxColumn1});
+            this.estandarDataView1.DataSource = this.todoBindingSource;
+            this.estandarDataView1.Location = new System.Drawing.Point(100, 595);
+            this.estandarDataView1.Name = "estandarDataView1";
+            this.estandarDataView1.Size = new System.Drawing.Size(630, 150);
+            this.estandarDataView1.TabIndex = 19;
+            // 
+            // data1DataGridViewTextBoxColumn1
+            // 
+            this.data1DataGridViewTextBoxColumn1.DataPropertyName = "Data1";
+            this.data1DataGridViewTextBoxColumn1.HeaderText = "Data1";
+            this.data1DataGridViewTextBoxColumn1.Name = "data1DataGridViewTextBoxColumn1";
+            this.data1DataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // data2DataGridViewTextBoxColumn1
+            // 
+            this.data2DataGridViewTextBoxColumn1.DataPropertyName = "Data2";
+            this.data2DataGridViewTextBoxColumn1.HeaderText = "Data2";
+            this.data2DataGridViewTextBoxColumn1.Name = "data2DataGridViewTextBoxColumn1";
+            // 
+            // estandarDataView2
+            // 
+            this.estandarDataView2.AllowUserToAddRows = false;
+            this.estandarDataView2.AllowUserToResizeRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.estandarDataView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.estandarDataView2.AutoGenerateColumns = false;
+            this.estandarDataView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.estandarDataView2.BackgroundColor = System.Drawing.Color.White;
+            this.estandarDataView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.estandarDataView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.estandarDataView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.estandarDataView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.estandarDataView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.data1DataGridViewTextBoxColumn,
+            this.data2DataGridViewTextBoxColumn});
+            this.estandarDataView2.DataSource = this.todoBindingSource;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.estandarDataView2.DefaultCellStyle = dataGridViewCellStyle15;
+            this.estandarDataView2.EnableHeadersVisualStyles = false;
+            this.estandarDataView2.GridColor = System.Drawing.Color.LightGray;
+            this.estandarDataView2.Location = new System.Drawing.Point(89, 398);
+            this.estandarDataView2.Name = "estandarDataView2";
+            this.estandarDataView2.RowHeadersVisible = false;
+            this.estandarDataView2.Size = new System.Drawing.Size(630, 150);
+            this.estandarDataView2.TabIndex = 20;
+            // 
+            // data1DataGridViewTextBoxColumn
+            // 
+            this.data1DataGridViewTextBoxColumn.DataPropertyName = "Data1";
+            this.data1DataGridViewTextBoxColumn.HeaderText = "Data1";
+            this.data1DataGridViewTextBoxColumn.Name = "data1DataGridViewTextBoxColumn";
+            this.data1DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // data2DataGridViewTextBoxColumn
+            // 
+            this.data2DataGridViewTextBoxColumn.DataPropertyName = "Data2";
+            this.data2DataGridViewTextBoxColumn.HeaderText = "Data2";
+            this.data2DataGridViewTextBoxColumn.Name = "data2DataGridViewTextBoxColumn";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(544, 295);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 21;
+            // 
+            // estandarDataView3
+            // 
+            this.estandarDataView3.AllowUserToAddRows = false;
+            this.estandarDataView3.AllowUserToResizeRows = false;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.estandarDataView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.estandarDataView3.AutoGenerateColumns = false;
+            this.estandarDataView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.estandarDataView3.BackgroundColor = System.Drawing.Color.White;
+            this.estandarDataView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.estandarDataView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.estandarDataView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.estandarDataView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.estandarDataView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.data1DataGridViewTextBoxColumn2,
+            this.data2DataGridViewTextBoxColumn2});
+            this.estandarDataView3.DataSource = this.todoBindingSource;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.estandarDataView3.DefaultCellStyle = dataGridViewCellStyle18;
+            this.estandarDataView3.EnableHeadersVisualStyles = false;
+            this.estandarDataView3.GridColor = System.Drawing.Color.LightGray;
+            this.estandarDataView3.Location = new System.Drawing.Point(544, 44);
+            this.estandarDataView3.Name = "estandarDataView3";
+            this.estandarDataView3.RowHeadersVisible = false;
+            this.estandarDataView3.Size = new System.Drawing.Size(240, 150);
+            this.estandarDataView3.TabIndex = 22;
+            // 
+            // data1DataGridViewTextBoxColumn2
+            // 
+            this.data1DataGridViewTextBoxColumn2.DataPropertyName = "Data1";
+            this.data1DataGridViewTextBoxColumn2.HeaderText = "Data1";
+            this.data1DataGridViewTextBoxColumn2.Name = "data1DataGridViewTextBoxColumn2";
+            this.data1DataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // data2DataGridViewTextBoxColumn2
+            // 
+            this.data2DataGridViewTextBoxColumn2.DataPropertyName = "Data2";
+            this.data2DataGridViewTextBoxColumn2.HeaderText = "Data2";
+            this.data2DataGridViewTextBoxColumn2.Name = "data2DataGridViewTextBoxColumn2";
+            // 
+            // estadarComboBox1
+            // 
+            this.estadarComboBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estadarComboBox1.FormattingEnabled = true;
+            this.estadarComboBox1.Location = new System.Drawing.Point(544, 241);
+            this.estadarComboBox1.Name = "estadarComboBox1";
+            this.estadarComboBox1.Size = new System.Drawing.Size(121, 27);
+            this.estadarComboBox1.TabIndex = 23;
+            // 
             // EstandarizacionComponentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
