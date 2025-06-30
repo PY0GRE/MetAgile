@@ -34,7 +34,6 @@
             this.lblTitulo = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
             this.dgvRoles = new MantenimientoEquipos.ModifierComponents.EstandarDataView();
             this.btnNuevoRol = new MantenimientoEquipos.ModifierComponents.EstandarButton();
-            this.btnEliminarRol = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.btnEditarRol = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).BeginInit();
             this.SuspendLayout();
@@ -93,26 +92,12 @@
             this.btnNuevoRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoRol.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoRol.ForeColor = System.Drawing.Color.White;
-            this.btnNuevoRol.Location = new System.Drawing.Point(71, 396);
+            this.btnNuevoRol.Location = new System.Drawing.Point(236, 396);
             this.btnNuevoRol.Name = "btnNuevoRol";
             this.btnNuevoRol.Size = new System.Drawing.Size(116, 35);
             this.btnNuevoRol.TabIndex = 6;
             this.btnNuevoRol.Text = "Nuevo Rol";
             this.btnNuevoRol.UseVisualStyleBackColor = false;
-            // 
-            // btnEliminarRol
-            // 
-            this.btnEliminarRol.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEliminarRol.BorderRadius = 20;
-            this.btnEliminarRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarRol.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarRol.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarRol.Location = new System.Drawing.Point(572, 396);
-            this.btnEliminarRol.Name = "btnEliminarRol";
-            this.btnEliminarRol.Size = new System.Drawing.Size(120, 35);
-            this.btnEliminarRol.TabIndex = 7;
-            this.btnEliminarRol.Text = "Eliminar Rol";
-            this.btnEliminarRol.UseVisualStyleBackColor = false;
             // 
             // btnEditarRol
             // 
@@ -121,12 +106,13 @@
             this.btnEditarRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarRol.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditarRol.ForeColor = System.Drawing.Color.White;
-            this.btnEditarRol.Location = new System.Drawing.Point(337, 396);
+            this.btnEditarRol.Location = new System.Drawing.Point(414, 396);
             this.btnEditarRol.Name = "btnEditarRol";
             this.btnEditarRol.Size = new System.Drawing.Size(120, 35);
             this.btnEditarRol.TabIndex = 8;
             this.btnEditarRol.Text = "Editar Rol";
             this.btnEditarRol.UseVisualStyleBackColor = false;
+            this.btnEditarRol.Click += new System.EventHandler(this.btnEditarRol_Click);
             // 
             // MenuRolesView
             // 
@@ -134,7 +120,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 553);
             this.Controls.Add(this.btnEditarRol);
-            this.Controls.Add(this.btnEliminarRol);
             this.Controls.Add(this.btnNuevoRol);
             this.Controls.Add(this.dgvRoles);
             this.Controls.Add(this.lblTitulo);
@@ -151,7 +136,6 @@
         private ModifierComponents.EstandarTitleLabel lblTitulo;
         private ModifierComponents.EstandarDataView dgvRoles;
         private ModifierComponents.EstandarButton btnNuevoRol;
-        private ModifierComponents.EstandarButton btnEliminarRol;
         private ModifierComponents.EstandarButton btnEditarRol;
     }
 }

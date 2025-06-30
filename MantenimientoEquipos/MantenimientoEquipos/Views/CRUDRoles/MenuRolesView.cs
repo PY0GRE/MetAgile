@@ -16,5 +16,10 @@ namespace MantenimientoEquipos.Views.CRUDRoles
         {
             InitializeComponent();
         }
+
+        private void btnEditarRol_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
