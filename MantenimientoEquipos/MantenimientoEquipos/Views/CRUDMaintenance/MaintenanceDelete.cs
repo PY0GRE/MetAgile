@@ -8,26 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MantenimientoEquipos.Views
+namespace MantenimientoEquipos.Views.CRUDMaintenance
 {
-    public partial class MenuMaintenance : Form
+    public partial class MaintenanceDelete : Form
     {
-        public MenuMaintenance()
+        public MaintenanceDelete()
         {
             InitializeComponent();
         }
 
         private void estandarLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void estandarButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void estandarButton3_Click(object sender, EventArgs e)
         {
 
         }

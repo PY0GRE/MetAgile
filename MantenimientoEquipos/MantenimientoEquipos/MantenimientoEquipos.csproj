@@ -114,6 +114,24 @@
     <Compile Include="Views\CRUDDevices\MenuDevicesView.Designer.cs">
       <DependentUpon>MenuDevicesView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CRUDMaintenance\MaintenanceAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CRUDMaintenance\MaintenanceAdd.Designer.cs">
+      <DependentUpon>MaintenanceAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CRUDMaintenance\MaintenanceDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CRUDMaintenance\MaintenanceDelete.Designer.cs">
+      <DependentUpon>MaintenanceDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CRUDMaintenance\MaintenanceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CRUDMaintenance\MaintenanceUpdate.Designer.cs">
+      <DependentUpon>MaintenanceUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CRUDMaintenance\MaintenanceView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +206,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CRUDDevices\MenuDevicesView.resx">
       <DependentUpon>MenuDevicesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDMaintenance\MaintenanceAdd.resx">
+      <DependentUpon>MaintenanceAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDMaintenance\MaintenanceDelete.resx">
+      <DependentUpon>MaintenanceDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDMaintenance\MaintenanceUpdate.resx">
+      <DependentUpon>MaintenanceUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDMaintenance\MaintenanceView.resx">
+      <DependentUpon>MaintenanceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDMaintenance\MenuMaintenance.resx">
+      <DependentUpon>MenuMaintenance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LogInView.resx">
       <DependentUpon>LogInView.cs</DependentUpon>
