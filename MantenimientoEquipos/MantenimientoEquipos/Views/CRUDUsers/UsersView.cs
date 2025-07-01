@@ -16,5 +16,10 @@ namespace MantenimientoEquipos.Views.CRUDUsers
         {
             InitializeComponent();
         }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
