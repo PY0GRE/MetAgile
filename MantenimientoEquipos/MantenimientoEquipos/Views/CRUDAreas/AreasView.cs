@@ -16,5 +16,10 @@ namespace MantenimientoEquipos.Views.CRUDAreas
         {
             InitializeComponent();
         }
+
+        private void estandarDataView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

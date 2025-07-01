@@ -37,6 +37,7 @@
             this.estandarLabel4 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.estandarTextBox3 = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
             this.estandarTextBox4 = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
+            this.btnNuevoRol = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.SuspendLayout();
             // 
             // estandarTitleLabel1
@@ -139,11 +140,27 @@
             this.estandarTextBox4.Size = new System.Drawing.Size(289, 27);
             this.estandarTextBox4.TabIndex = 22;
             // 
+            // btnNuevoRol
+            // 
+            this.btnNuevoRol.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnNuevoRol.BorderRadius = 20;
+            this.btnNuevoRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoRol.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoRol.ForeColor = System.Drawing.Color.White;
+            this.btnNuevoRol.Location = new System.Drawing.Point(533, 403);
+            this.btnNuevoRol.Name = "btnNuevoRol";
+            this.btnNuevoRol.Size = new System.Drawing.Size(116, 35);
+            this.btnNuevoRol.TabIndex = 23;
+            this.btnNuevoRol.Text = "Agregar Area ";
+            this.btnNuevoRol.UseVisualStyleBackColor = false;
+            this.btnNuevoRol.Click += new System.EventHandler(this.btnNuevoRol_Click);
+            // 
             // Areas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(661, 450);
+            this.Controls.Add(this.btnNuevoRol);
             this.Controls.Add(this.estandarTextBox4);
             this.Controls.Add(this.estandarTextBox3);
             this.Controls.Add(this.estandarLabel4);
@@ -171,5 +188,6 @@
         private ModifierComponents.EstandarLabel estandarLabel4;
         private ModifierComponents.EstandarTextBox estandarTextBox3;
         private ModifierComponents.EstandarTextBox estandarTextBox4;
+        private ModifierComponents.EstandarButton btnNuevoRol;
     }
 }

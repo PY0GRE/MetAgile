@@ -17,9 +17,10 @@ namespace MantenimientoEquipos.Views.CRUDAreas
             InitializeComponent();
         }
 
-     
-        
+        private void btnNuevoRol_Click(object sender, EventArgs e)
+        {
 
         }
+    }
     }
 

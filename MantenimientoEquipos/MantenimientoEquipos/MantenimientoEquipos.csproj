@@ -190,6 +190,9 @@
     <EmbeddedResource Include="Views\CRUDAreas\Areas.resx">
       <DependentUpon>Areas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDAreas\AreasView.resx">
+      <DependentUpon>AreasView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CRUDDevices\DevicesView.resx">
       <DependentUpon>DevicesView.cs</DependentUpon>
     </EmbeddedResource>
