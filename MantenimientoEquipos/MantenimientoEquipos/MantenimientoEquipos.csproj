@@ -106,12 +106,6 @@
     <Compile Include="Views\CRUDMaintenance\MaintenanceAdd.Designer.cs">
       <DependentUpon>MaintenanceAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CRUDMaintenance\MaintenanceDelete.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\CRUDMaintenance\MaintenanceDelete.Designer.cs">
-      <DependentUpon>MaintenanceDelete.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\CRUDMaintenance\MaintenanceUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CRUDDevices\MenuDevicesView.resx">
       <DependentUpon>MenuDevicesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDMaintenance\MenuMaintenance.resx">
+      <DependentUpon>MenuMaintenance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CRUDRoles\MenuRolesView.resx">
       <DependentUpon>MenuRolesView.cs</DependentUpon>
