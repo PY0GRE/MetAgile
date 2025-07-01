@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MantenimientoEquipos.Views.CRUDUsers
+namespace MantenimientoEquipos.Views.CRUDRoles
 {
-    public partial class UsersView : Form
+    public partial class UpdateRolesView : Form
     {
-        public UsersView()
+        public UpdateRolesView()
         {
             InitializeComponent();
-        }
-
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

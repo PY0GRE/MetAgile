@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitulo = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
             this.dgvRoles = new MantenimientoEquipos.ModifierComponents.EstandarDataView();
             this.btnNuevoRol = new MantenimientoEquipos.ModifierComponents.EstandarButton();
-            this.btnEliminarRol = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.btnEditarRol = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRoles)).BeginInit();
             this.SuspendLayout();
@@ -55,29 +54,29 @@
             // 
             this.dgvRoles.AllowUserToAddRows = false;
             this.dgvRoles.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dgvRoles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dgvRoles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvRoles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRoles.BackgroundColor = System.Drawing.Color.White;
             this.dgvRoles.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvRoles.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRoles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRoles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvRoles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 10F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvRoles.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRoles.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvRoles.EnableHeadersVisualStyles = false;
             this.dgvRoles.GridColor = System.Drawing.Color.LightGray;
             this.dgvRoles.Location = new System.Drawing.Point(267, 154);
@@ -93,26 +92,12 @@
             this.btnNuevoRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevoRol.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoRol.ForeColor = System.Drawing.Color.White;
-            this.btnNuevoRol.Location = new System.Drawing.Point(71, 396);
+            this.btnNuevoRol.Location = new System.Drawing.Point(236, 396);
             this.btnNuevoRol.Name = "btnNuevoRol";
             this.btnNuevoRol.Size = new System.Drawing.Size(116, 35);
             this.btnNuevoRol.TabIndex = 6;
             this.btnNuevoRol.Text = "Nuevo Rol";
             this.btnNuevoRol.UseVisualStyleBackColor = false;
-            // 
-            // btnEliminarRol
-            // 
-            this.btnEliminarRol.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEliminarRol.BorderRadius = 20;
-            this.btnEliminarRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarRol.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarRol.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarRol.Location = new System.Drawing.Point(572, 396);
-            this.btnEliminarRol.Name = "btnEliminarRol";
-            this.btnEliminarRol.Size = new System.Drawing.Size(120, 35);
-            this.btnEliminarRol.TabIndex = 7;
-            this.btnEliminarRol.Text = "Eliminar Rol";
-            this.btnEliminarRol.UseVisualStyleBackColor = false;
             // 
             // btnEditarRol
             // 
@@ -121,12 +106,13 @@
             this.btnEditarRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarRol.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditarRol.ForeColor = System.Drawing.Color.White;
-            this.btnEditarRol.Location = new System.Drawing.Point(337, 396);
+            this.btnEditarRol.Location = new System.Drawing.Point(414, 396);
             this.btnEditarRol.Name = "btnEditarRol";
             this.btnEditarRol.Size = new System.Drawing.Size(120, 35);
             this.btnEditarRol.TabIndex = 8;
             this.btnEditarRol.Text = "Editar Rol";
             this.btnEditarRol.UseVisualStyleBackColor = false;
+            this.btnEditarRol.Click += new System.EventHandler(this.btnEditarRol_Click);
             // 
             // MenuRolesView
             // 
@@ -134,7 +120,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 553);
             this.Controls.Add(this.btnEditarRol);
-            this.Controls.Add(this.btnEliminarRol);
             this.Controls.Add(this.btnNuevoRol);
             this.Controls.Add(this.dgvRoles);
             this.Controls.Add(this.lblTitulo);
@@ -151,7 +136,6 @@
         private ModifierComponents.EstandarTitleLabel lblTitulo;
         private ModifierComponents.EstandarDataView dgvRoles;
         private ModifierComponents.EstandarButton btnNuevoRol;
-        private ModifierComponents.EstandarButton btnEliminarRol;
         private ModifierComponents.EstandarButton btnEditarRol;
     }
 }

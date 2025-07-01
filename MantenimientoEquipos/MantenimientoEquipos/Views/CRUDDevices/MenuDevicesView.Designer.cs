@@ -32,6 +32,8 @@
             this.bttReturn = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.bttAdd = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.estandarTitleLabel1 = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
+            this.bttUpdate = new MantenimientoEquipos.ModifierComponents.EstandarButton();
+            this.bttDelete = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +52,7 @@
             this.bttReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttReturn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttReturn.ForeColor = System.Drawing.Color.White;
-            this.bttReturn.Location = new System.Drawing.Point(930, 33);
+            this.bttReturn.Location = new System.Drawing.Point(930, 39);
             this.bttReturn.Name = "bttReturn";
             this.bttReturn.Size = new System.Drawing.Size(117, 35);
             this.bttReturn.TabIndex = 3;
@@ -65,7 +67,7 @@
             this.bttAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttAdd.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttAdd.ForeColor = System.Drawing.Color.White;
-            this.bttAdd.Location = new System.Drawing.Point(930, 103);
+            this.bttAdd.Location = new System.Drawing.Point(930, 121);
             this.bttAdd.Name = "bttAdd";
             this.bttAdd.Size = new System.Drawing.Size(117, 35);
             this.bttAdd.TabIndex = 2;
@@ -85,12 +87,43 @@
             this.estandarTitleLabel1.TabIndex = 0;
             this.estandarTitleLabel1.Text = "Dispositivos";
             // 
+            // bttUpdate
+            // 
+            this.bttUpdate.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttUpdate.BorderRadius = 20;
+            this.bttUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttUpdate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttUpdate.ForeColor = System.Drawing.Color.White;
+            this.bttUpdate.Location = new System.Drawing.Point(930, 80);
+            this.bttUpdate.Name = "bttUpdate";
+            this.bttUpdate.Size = new System.Drawing.Size(117, 35);
+            this.bttUpdate.TabIndex = 4;
+            this.bttUpdate.Text = "Modificar";
+            this.bttUpdate.UseVisualStyleBackColor = false;
+            this.bttUpdate.Click += new System.EventHandler(this.bttUpdate_Click);
+            // 
+            // bttDelete
+            // 
+            this.bttDelete.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttDelete.BorderRadius = 20;
+            this.bttDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttDelete.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttDelete.ForeColor = System.Drawing.Color.White;
+            this.bttDelete.Location = new System.Drawing.Point(807, 121);
+            this.bttDelete.Name = "bttDelete";
+            this.bttDelete.Size = new System.Drawing.Size(117, 35);
+            this.bttDelete.TabIndex = 5;
+            this.bttDelete.Text = "Dar de Baja";
+            this.bttDelete.UseVisualStyleBackColor = false;
+            // 
             // MenuDevicesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1078, 523);
+            this.Controls.Add(this.bttDelete);
+            this.Controls.Add(this.bttUpdate);
             this.Controls.Add(this.bttReturn);
             this.Controls.Add(this.bttAdd);
             this.Controls.Add(this.dataGridView1);
@@ -109,5 +142,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private ModifierComponents.EstandarButton bttAdd;
         private ModifierComponents.EstandarButton bttReturn;
+        private ModifierComponents.EstandarButton bttUpdate;
+        private ModifierComponents.EstandarButton bttDelete;
     }
 }
