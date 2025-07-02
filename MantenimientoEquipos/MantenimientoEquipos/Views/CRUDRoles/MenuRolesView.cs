@@ -15,8 +15,9 @@ namespace MantenimientoEquipos.Views.CRUDRoles
         public MenuRolesView()
         {
             InitializeComponent();
-        }
 
+        }
+        string con = DataBaseConnection.ConnectionString;
         private void btnEditarRol_Click(object sender, EventArgs e)
         {
 
