@@ -119,6 +119,7 @@
             this.bttRole.TabIndex = 5;
             this.bttRole.Text = "Roles";
             this.bttRole.UseVisualStyleBackColor = false;
+            this.bttRole.Click += new System.EventHandler(this.bttRole_Click);
             // 
             // MainMenuView
             // 

@@ -33,5 +33,16 @@ namespace MantenimientoEquipos.Properties {
                 return ((string)(this["ProbaConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-P6SV6G8N;Initial Catalog=MetAgile;Integrated Security=True;Enc" +
+            "rypt=False")]
+        public string MetAgileConnectionString {
+            get {
+                return ((string)(this["MetAgileConnectionString"]));
+            }
+        }
     }
 }

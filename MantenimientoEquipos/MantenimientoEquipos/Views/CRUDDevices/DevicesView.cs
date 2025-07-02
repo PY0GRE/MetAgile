@@ -13,6 +13,9 @@ namespace MantenimientoEquipos.Views.CRUDDevices
 {
     public partial class DevicesView : Form
     {
+
+        string con = DataBaseConnection.ConnectionString;
+
         public DevicesView(string title)
         {
             InitializeComponent();

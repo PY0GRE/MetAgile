@@ -104,7 +104,7 @@
             // 
             // bttDelete
             // 
-            this.bttDelete.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttDelete.BackColor = System.Drawing.Color.IndianRed;
             this.bttDelete.BorderRadius = 20;
             this.bttDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttDelete.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

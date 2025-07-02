@@ -31,5 +31,11 @@ namespace MantenimientoEquipos.Views
         {
 
         }
+
+        private void bttReturn_Click(object sender, EventArgs e)
+        {
+            new MainMenuView().Show();
+            this.Hide();
+        }
     }
 }
