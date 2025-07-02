@@ -40,5 +40,10 @@ namespace MantenimientoEquipos.Views.CRUDDevices
             new MenuDevicesView().Show();
             this.Hide();
         }
+
+        private void DevicesView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

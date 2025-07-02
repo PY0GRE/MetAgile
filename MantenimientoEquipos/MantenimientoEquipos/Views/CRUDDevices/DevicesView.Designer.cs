@@ -216,6 +216,7 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "DevicesView";
             this.Text = "DevicesView";
+            this.Load += new System.EventHandler(this.DevicesView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
