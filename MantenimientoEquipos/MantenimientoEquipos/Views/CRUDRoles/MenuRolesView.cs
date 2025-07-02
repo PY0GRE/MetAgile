@@ -21,5 +21,15 @@ namespace MantenimientoEquipos.Views.CRUDRoles
         {
 
         }
+
+        private void MenuRolesView_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bttCancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
