@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataBaseConnection.cs" />
+    <Compile Include="MetAgileDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ModifierComponents\EstadarComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -220,6 +226,17 @@
     <EmbeddedResource Include="Views\CRUDUsers\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="MetAgileDataSet.xsc">
+      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MetAgileDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MetAgileDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MetAgileDataSet.xss">
+      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
