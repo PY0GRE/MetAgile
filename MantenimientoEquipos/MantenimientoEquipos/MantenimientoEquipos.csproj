@@ -47,10 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBaseConnection.cs" />
-    <Compile Include="MetAgileDataSet.Designer.cs">
+    <Compile Include="MetAgileDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
+      <DependentUpon>MetAgileDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="ModifierComponents\EstadarComboBox.cs">
       <SubType>Component</SubType>
@@ -226,16 +226,16 @@
     <EmbeddedResource Include="Views\CRUDUsers\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="MetAgileDataSet.xsc">
-      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
+    <None Include="MetAgileDataSet1.xsc">
+      <DependentUpon>MetAgileDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="MetAgileDataSet.xsd">
+    <None Include="MetAgileDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MetAgileDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>MetAgileDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="MetAgileDataSet.xss">
-      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
+    <None Include="MetAgileDataSet1.xss">
+      <DependentUpon>MetAgileDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
