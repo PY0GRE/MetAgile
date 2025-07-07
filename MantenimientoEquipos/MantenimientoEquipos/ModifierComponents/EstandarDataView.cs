@@ -42,6 +42,10 @@ namespace MantenimientoEquipos.ModifierComponents
 
             // Alternancia de filas (opcional)
             this.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 245, 245);
+
+            this.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            this.MultiSelect = false;
+            this.ReadOnly = true;
         }
     }
 }
