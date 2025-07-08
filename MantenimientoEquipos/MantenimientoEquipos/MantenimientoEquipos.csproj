@@ -47,15 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBaseConnection.cs" />
-    <Compile Include="MetAgileDataSet1.Designer.cs">
+    <Compile Include="MetAgileDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MetAgileDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="MetAgileDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MetAgileDataSet1.xsd</DependentUpon>
+      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="ModifierComponents\EstadarComboBox.cs">
       <SubType>Component</SubType>
@@ -210,6 +205,9 @@
     <EmbeddedResource Include="Views\CRUDDevices\MenuDevicesView.resx">
       <DependentUpon>MenuDevicesView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDDevices\UpdateDevicesView.resx">
+      <DependentUpon>UpdateDevicesView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CRUDMaintenance\MenuMaintenance.resx">
       <DependentUpon>MenuMaintenance.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,27 +229,16 @@
     <EmbeddedResource Include="Views\CRUDUsers\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="MetAgileDataSet1.xsc">
-      <DependentUpon>MetAgileDataSet1.xsd</DependentUpon>
+    <None Include="MetAgileDataSet.xsc">
+      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
     </None>
-    <None Include="MetAgileDataSet1.xsd">
+    <None Include="MetAgileDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MetAgileDataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>MetAgileDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="MetAgileDataSet1.xss">
-      <DependentUpon>MetAgileDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="MetAgileDataSet1.xsc">
-      <DependentUpon>MetAgileDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="MetAgileDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MetAgileDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="MetAgileDataSet1.xss">
-      <DependentUpon>MetAgileDataSet1.xsd</DependentUpon>
+    <None Include="MetAgileDataSet.xss">
+      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
