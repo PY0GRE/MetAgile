@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace MantenimientoEquipos.Views.CRUDAreas
 {
-    public partial class Areas : Form
+    public partial class AgregarArea : Form
     {
         string con = DataBaseConnection.ConnectionString;
-        public Areas()
+        public AgregarArea()
         {
             InitializeComponent();
 
@@ -23,9 +23,6 @@ namespace MantenimientoEquipos.Views.CRUDAreas
             // Placeholders
             PlaceholderHelper.SetPlaceholder(txtNombreArea, "Nombre del área");
             PlaceholderHelper.SetPlaceholder(txtDescripcion, "Descripción del área");
-            PlaceholderHelper.SetPlaceholder(estandarTextBox1, "Responsable");
-            PlaceholderHelper.SetPlaceholder(estandarTextBox3, "Cantidad de Equipo");
-
 
         }
 
@@ -78,6 +75,18 @@ namespace MantenimientoEquipos.Views.CRUDAreas
         private void Areas_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void estandarButton1_Click(object sender, EventArgs e)
+        {
+            new MainMenuView().Show();
+            this.Hide();
+        }
+
+        private void BttMenuAreas_Click(object sender, EventArgs e)
+        {
+            new MenuAreas().Show();
+            this.Hide();
         }
     }
 }

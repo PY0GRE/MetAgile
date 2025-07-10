@@ -76,23 +76,23 @@
     <Compile Include="PlacerHolderHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\CRUDAreas\Areas.cs">
+    <Compile Include="Views\CRUDAreas\AgregarArea.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CRUDAreas\Areas.Designer.cs">
-      <DependentUpon>Areas.cs</DependentUpon>
+    <Compile Include="Views\CRUDAreas\AgregarArea.Designer.cs">
+      <DependentUpon>AgregarArea.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CRUDAreas\AreasView.cs">
+    <Compile Include="Views\CRUDAreas\MenuAreas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CRUDAreas\AreasView.Designer.cs">
-      <DependentUpon>AreasView.cs</DependentUpon>
+    <Compile Include="Views\CRUDAreas\MenuAreas.Designer.cs">
+      <DependentUpon>MenuAreas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CRUDAreas\MenuAreasView.cs">
+    <Compile Include="Views\CRUDAreas\UpdateAreasView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CRUDAreas\MenuAreasView.Designer.cs">
-      <DependentUpon>MenuAreasView.cs</DependentUpon>
+    <Compile Include="Views\CRUDAreas\UpdateAreasView.Designer.cs">
+      <DependentUpon>UpdateAreasView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\CRUDDevices\DevicesView.cs">
       <SubType>Form</SubType>
@@ -193,11 +193,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\CRUDAreas\Areas.resx">
-      <DependentUpon>Areas.cs</DependentUpon>
+    <EmbeddedResource Include="Views\CRUDAreas\AgregarArea.resx">
+      <DependentUpon>AgregarArea.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CRUDAreas\AreasView.resx">
-      <DependentUpon>AreasView.cs</DependentUpon>
+    <EmbeddedResource Include="Views\CRUDAreas\MenuAreas.resx">
+      <DependentUpon>MenuAreas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDAreas\UpdateAreasView.resx">
+      <DependentUpon>UpdateAreasView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CRUDDevices\DevicesView.resx">
       <DependentUpon>DevicesView.cs</DependentUpon>

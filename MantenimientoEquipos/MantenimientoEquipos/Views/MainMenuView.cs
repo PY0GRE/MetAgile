@@ -1,4 +1,5 @@
-﻿using MantenimientoEquipos.Views.CRUDDevices;
+﻿using MantenimientoEquipos.Views.CRUDAreas;
+using MantenimientoEquipos.Views.CRUDDevices;
 using MantenimientoEquipos.Views.CRUDRoles;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,17 @@ namespace MantenimientoEquipos.Views
         {
             new MenuRolesView().Show();
             this.Hide();
+        }
+
+        private void bttAreas_Click(object sender, EventArgs e)
+        {
+            new AgregarArea().Show();
+            this.Hide();
+        }
+
+        private void MainMenuView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

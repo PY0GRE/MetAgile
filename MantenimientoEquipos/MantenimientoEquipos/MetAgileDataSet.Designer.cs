@@ -46,23 +46,21 @@ namespace MantenimientoEquipos {
         
         private UserStatusDataTable tableUserStatus;
         
-        private global::System.Data.DataRelation relationFK__Devices__idArea__5EBF139D;
+        private global::System.Data.DataRelation relationFK__Devices__idBrand__4AB81AF0;
         
-        private global::System.Data.DataRelation relationFK__Devices__idBrand__5DCAEF64;
+        private global::System.Data.DataRelation relationFK__Devices__idDevic__49C3F6B7;
         
-        private global::System.Data.DataRelation relationFK__Devices__idDevic__5CD6CB2B;
+        private global::System.Data.DataRelation relationFK__Devices__idStatu__4BAC3F29;
         
-        private global::System.Data.DataRelation relationFK__Devices__idStatu__5FB337D6;
+        private global::System.Data.DataRelation relationFK__Manteinan__idMan__4E88ABD4;
         
-        private global::System.Data.DataRelation relationFK__Manteinan__idMan__628FA481;
+        private global::System.Data.DataRelation relationFK__Manteinan__idMan__4F7CD00D;
         
-        private global::System.Data.DataRelation relationFK__Manteinan__idMan__6383C8BA;
+        private global::System.Data.DataRelation relationFK__Manteinan__idUse__5070F446;
         
-        private global::System.Data.DataRelation relationFK__Manteinan__idUse__6477ECF3;
+        private global::System.Data.DataRelation relationFK__Users__idRole__45F365D3;
         
-        private global::System.Data.DataRelation relationFK__Users__idRole__46E78A0C;
-        
-        private global::System.Data.DataRelation relationFK__Users__idStatus__47DBAE45;
+        private global::System.Data.DataRelation relationFK__Users__idStatus__46E78A0C;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -452,15 +450,14 @@ namespace MantenimientoEquipos {
                     this.tableUserStatus.InitVars();
                 }
             }
-            this.relationFK__Devices__idArea__5EBF139D = this.Relations["FK__Devices__idArea__5EBF139D"];
-            this.relationFK__Devices__idBrand__5DCAEF64 = this.Relations["FK__Devices__idBrand__5DCAEF64"];
-            this.relationFK__Devices__idDevic__5CD6CB2B = this.Relations["FK__Devices__idDevic__5CD6CB2B"];
-            this.relationFK__Devices__idStatu__5FB337D6 = this.Relations["FK__Devices__idStatu__5FB337D6"];
-            this.relationFK__Manteinan__idMan__628FA481 = this.Relations["FK__Manteinan__idMan__628FA481"];
-            this.relationFK__Manteinan__idMan__6383C8BA = this.Relations["FK__Manteinan__idMan__6383C8BA"];
-            this.relationFK__Manteinan__idUse__6477ECF3 = this.Relations["FK__Manteinan__idUse__6477ECF3"];
-            this.relationFK__Users__idRole__46E78A0C = this.Relations["FK__Users__idRole__46E78A0C"];
-            this.relationFK__Users__idStatus__47DBAE45 = this.Relations["FK__Users__idStatus__47DBAE45"];
+            this.relationFK__Devices__idBrand__4AB81AF0 = this.Relations["FK__Devices__idBrand__4AB81AF0"];
+            this.relationFK__Devices__idDevic__49C3F6B7 = this.Relations["FK__Devices__idDevic__49C3F6B7"];
+            this.relationFK__Devices__idStatu__4BAC3F29 = this.Relations["FK__Devices__idStatu__4BAC3F29"];
+            this.relationFK__Manteinan__idMan__4E88ABD4 = this.Relations["FK__Manteinan__idMan__4E88ABD4"];
+            this.relationFK__Manteinan__idMan__4F7CD00D = this.Relations["FK__Manteinan__idMan__4F7CD00D"];
+            this.relationFK__Manteinan__idUse__5070F446 = this.Relations["FK__Manteinan__idUse__5070F446"];
+            this.relationFK__Users__idRole__45F365D3 = this.Relations["FK__Users__idRole__45F365D3"];
+            this.relationFK__Users__idStatus__46E78A0C = this.Relations["FK__Users__idStatus__46E78A0C"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -493,42 +490,38 @@ namespace MantenimientoEquipos {
             base.Tables.Add(this.tableUsers);
             this.tableUserStatus = new UserStatusDataTable();
             base.Tables.Add(this.tableUserStatus);
-            this.relationFK__Devices__idArea__5EBF139D = new global::System.Data.DataRelation("FK__Devices__idArea__5EBF139D", new global::System.Data.DataColumn[] {
-                        this.tableAreas.idAreaColumn}, new global::System.Data.DataColumn[] {
-                        this.tableDevices.idAreaColumn}, false);
-            this.Relations.Add(this.relationFK__Devices__idArea__5EBF139D);
-            this.relationFK__Devices__idBrand__5DCAEF64 = new global::System.Data.DataRelation("FK__Devices__idBrand__5DCAEF64", new global::System.Data.DataColumn[] {
+            this.relationFK__Devices__idBrand__4AB81AF0 = new global::System.Data.DataRelation("FK__Devices__idBrand__4AB81AF0", new global::System.Data.DataColumn[] {
                         this.tableBrands.idBrandColumn}, new global::System.Data.DataColumn[] {
                         this.tableDevices.idBrandColumn}, false);
-            this.Relations.Add(this.relationFK__Devices__idBrand__5DCAEF64);
-            this.relationFK__Devices__idDevic__5CD6CB2B = new global::System.Data.DataRelation("FK__Devices__idDevic__5CD6CB2B", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Devices__idBrand__4AB81AF0);
+            this.relationFK__Devices__idDevic__49C3F6B7 = new global::System.Data.DataRelation("FK__Devices__idDevic__49C3F6B7", new global::System.Data.DataColumn[] {
                         this.tableDeviceTypes.idDeviceTypeColumn}, new global::System.Data.DataColumn[] {
                         this.tableDevices.idDeviceTypeColumn}, false);
-            this.Relations.Add(this.relationFK__Devices__idDevic__5CD6CB2B);
-            this.relationFK__Devices__idStatu__5FB337D6 = new global::System.Data.DataRelation("FK__Devices__idStatu__5FB337D6", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Devices__idDevic__49C3F6B7);
+            this.relationFK__Devices__idStatu__4BAC3F29 = new global::System.Data.DataRelation("FK__Devices__idStatu__4BAC3F29", new global::System.Data.DataColumn[] {
                         this.tableDeviceStatus.idDeviceStatusColumn}, new global::System.Data.DataColumn[] {
                         this.tableDevices.idStatusColumn}, false);
-            this.Relations.Add(this.relationFK__Devices__idStatu__5FB337D6);
-            this.relationFK__Manteinan__idMan__628FA481 = new global::System.Data.DataRelation("FK__Manteinan__idMan__628FA481", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Devices__idStatu__4BAC3F29);
+            this.relationFK__Manteinan__idMan__4E88ABD4 = new global::System.Data.DataRelation("FK__Manteinan__idMan__4E88ABD4", new global::System.Data.DataColumn[] {
                         this.tableManteinanceTypes.idManteinanceTypeColumn}, new global::System.Data.DataColumn[] {
                         this.tableManteinances.idManTypeColumn}, false);
-            this.Relations.Add(this.relationFK__Manteinan__idMan__628FA481);
-            this.relationFK__Manteinan__idMan__6383C8BA = new global::System.Data.DataRelation("FK__Manteinan__idMan__6383C8BA", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Manteinan__idMan__4E88ABD4);
+            this.relationFK__Manteinan__idMan__4F7CD00D = new global::System.Data.DataRelation("FK__Manteinan__idMan__4F7CD00D", new global::System.Data.DataColumn[] {
                         this.tableManteinanceNatures.idManteinanceNatureColumn}, new global::System.Data.DataColumn[] {
                         this.tableManteinances.idManNatColumn}, false);
-            this.Relations.Add(this.relationFK__Manteinan__idMan__6383C8BA);
-            this.relationFK__Manteinan__idUse__6477ECF3 = new global::System.Data.DataRelation("FK__Manteinan__idUse__6477ECF3", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Manteinan__idMan__4F7CD00D);
+            this.relationFK__Manteinan__idUse__5070F446 = new global::System.Data.DataRelation("FK__Manteinan__idUse__5070F446", new global::System.Data.DataColumn[] {
                         this.tableUsers.idUserColumn}, new global::System.Data.DataColumn[] {
                         this.tableManteinances.idUserColumn}, false);
-            this.Relations.Add(this.relationFK__Manteinan__idUse__6477ECF3);
-            this.relationFK__Users__idRole__46E78A0C = new global::System.Data.DataRelation("FK__Users__idRole__46E78A0C", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Manteinan__idUse__5070F446);
+            this.relationFK__Users__idRole__45F365D3 = new global::System.Data.DataRelation("FK__Users__idRole__45F365D3", new global::System.Data.DataColumn[] {
                         this.tableRoles.idRoleColumn}, new global::System.Data.DataColumn[] {
                         this.tableUsers.idRoleColumn}, false);
-            this.Relations.Add(this.relationFK__Users__idRole__46E78A0C);
-            this.relationFK__Users__idStatus__47DBAE45 = new global::System.Data.DataRelation("FK__Users__idStatus__47DBAE45", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Users__idRole__45F365D3);
+            this.relationFK__Users__idStatus__46E78A0C = new global::System.Data.DataRelation("FK__Users__idStatus__46E78A0C", new global::System.Data.DataColumn[] {
                         this.tableUserStatus.idUserStatusColumn}, new global::System.Data.DataColumn[] {
                         this.tableUsers.idStatusColumn}, false);
-            this.Relations.Add(this.relationFK__Users__idStatus__47DBAE45);
+            this.Relations.Add(this.relationFK__Users__idStatus__46E78A0C);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1271,8 +1264,6 @@ namespace MantenimientoEquipos {
             
             private global::System.Data.DataColumn columnidBrand;
             
-            private global::System.Data.DataColumn columnidArea;
-            
             private global::System.Data.DataColumn columnidStatus;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1350,14 +1341,6 @@ namespace MantenimientoEquipos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn idAreaColumn {
-                get {
-                    return this.columnidArea;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn idStatusColumn {
                 get {
                     return this.columnidStatus;
@@ -1401,7 +1384,7 @@ namespace MantenimientoEquipos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DevicesRow AddDevicesRow(string serialNumber, string model, DeviceTypesRow parentDeviceTypesRowByFK__Devices__idDevic__5CD6CB2B, BrandsRow parentBrandsRowByFK__Devices__idBrand__5DCAEF64, AreasRow parentAreasRowByFK__Devices__idArea__5EBF139D, DeviceStatusRow parentDeviceStatusRowByFK__Devices__idStatu__5FB337D6) {
+            public DevicesRow AddDevicesRow(string serialNumber, string model, DeviceTypesRow parentDeviceTypesRowByFK__Devices__idDevic__49C3F6B7, BrandsRow parentBrandsRowByFK__Devices__idBrand__4AB81AF0, DeviceStatusRow parentDeviceStatusRowByFK__Devices__idStatu__4BAC3F29) {
                 DevicesRow rowDevicesRow = ((DevicesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1409,19 +1392,15 @@ namespace MantenimientoEquipos {
                         model,
                         null,
                         null,
-                        null,
                         null};
-                if ((parentDeviceTypesRowByFK__Devices__idDevic__5CD6CB2B != null)) {
-                    columnValuesArray[3] = parentDeviceTypesRowByFK__Devices__idDevic__5CD6CB2B[0];
+                if ((parentDeviceTypesRowByFK__Devices__idDevic__49C3F6B7 != null)) {
+                    columnValuesArray[3] = parentDeviceTypesRowByFK__Devices__idDevic__49C3F6B7[0];
                 }
-                if ((parentBrandsRowByFK__Devices__idBrand__5DCAEF64 != null)) {
-                    columnValuesArray[4] = parentBrandsRowByFK__Devices__idBrand__5DCAEF64[0];
+                if ((parentBrandsRowByFK__Devices__idBrand__4AB81AF0 != null)) {
+                    columnValuesArray[4] = parentBrandsRowByFK__Devices__idBrand__4AB81AF0[0];
                 }
-                if ((parentAreasRowByFK__Devices__idArea__5EBF139D != null)) {
-                    columnValuesArray[5] = parentAreasRowByFK__Devices__idArea__5EBF139D[0];
-                }
-                if ((parentDeviceStatusRowByFK__Devices__idStatu__5FB337D6 != null)) {
-                    columnValuesArray[6] = parentDeviceStatusRowByFK__Devices__idStatu__5FB337D6[0];
+                if ((parentDeviceStatusRowByFK__Devices__idStatu__4BAC3F29 != null)) {
+                    columnValuesArray[5] = parentDeviceStatusRowByFK__Devices__idStatu__4BAC3F29[0];
                 }
                 rowDevicesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDevicesRow);
@@ -1457,7 +1436,6 @@ namespace MantenimientoEquipos {
                 this.columnmodel = base.Columns["model"];
                 this.columnidDeviceType = base.Columns["idDeviceType"];
                 this.columnidBrand = base.Columns["idBrand"];
-                this.columnidArea = base.Columns["idArea"];
                 this.columnidStatus = base.Columns["idStatus"];
             }
             
@@ -1474,8 +1452,6 @@ namespace MantenimientoEquipos {
                 base.Columns.Add(this.columnidDeviceType);
                 this.columnidBrand = new global::System.Data.DataColumn("idBrand", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnidBrand);
-                this.columnidArea = new global::System.Data.DataColumn("idArea", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnidArea);
                 this.columnidStatus = new global::System.Data.DataColumn("idStatus", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnidStatus);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
@@ -2592,7 +2568,7 @@ namespace MantenimientoEquipos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ManteinancesRow AddManteinancesRow(System.DateTime startDate, System.DateTime lastDate, ManteinanceTypesRow parentManteinanceTypesRowByFK__Manteinan__idMan__628FA481, ManteinanceNaturesRow parentManteinanceNaturesRowByFK__Manteinan__idMan__6383C8BA, UsersRow parentUsersRowByFK__Manteinan__idUse__6477ECF3, string description) {
+            public ManteinancesRow AddManteinancesRow(System.DateTime startDate, System.DateTime lastDate, ManteinanceTypesRow parentManteinanceTypesRowByFK__Manteinan__idMan__4E88ABD4, ManteinanceNaturesRow parentManteinanceNaturesRowByFK__Manteinan__idMan__4F7CD00D, UsersRow parentUsersRowByFK__Manteinan__idUse__5070F446, string description) {
                 ManteinancesRow rowManteinancesRow = ((ManteinancesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2602,14 +2578,14 @@ namespace MantenimientoEquipos {
                         null,
                         null,
                         description};
-                if ((parentManteinanceTypesRowByFK__Manteinan__idMan__628FA481 != null)) {
-                    columnValuesArray[3] = parentManteinanceTypesRowByFK__Manteinan__idMan__628FA481[0];
+                if ((parentManteinanceTypesRowByFK__Manteinan__idMan__4E88ABD4 != null)) {
+                    columnValuesArray[3] = parentManteinanceTypesRowByFK__Manteinan__idMan__4E88ABD4[0];
                 }
-                if ((parentManteinanceNaturesRowByFK__Manteinan__idMan__6383C8BA != null)) {
-                    columnValuesArray[4] = parentManteinanceNaturesRowByFK__Manteinan__idMan__6383C8BA[0];
+                if ((parentManteinanceNaturesRowByFK__Manteinan__idMan__4F7CD00D != null)) {
+                    columnValuesArray[4] = parentManteinanceNaturesRowByFK__Manteinan__idMan__4F7CD00D[0];
                 }
-                if ((parentUsersRowByFK__Manteinan__idUse__6477ECF3 != null)) {
-                    columnValuesArray[5] = parentUsersRowByFK__Manteinan__idUse__6477ECF3[0];
+                if ((parentUsersRowByFK__Manteinan__idUse__5070F446 != null)) {
+                    columnValuesArray[5] = parentUsersRowByFK__Manteinan__idUse__5070F446[0];
                 }
                 rowManteinancesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowManteinancesRow);
@@ -3507,7 +3483,7 @@ namespace MantenimientoEquipos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsersRow AddUsersRow(string name, string email, RolesRow parentRolesRowByFK__Users__idRole__46E78A0C, string password, UserStatusRow parentUserStatusRowByFK__Users__idStatus__47DBAE45) {
+            public UsersRow AddUsersRow(string name, string email, RolesRow parentRolesRowByFK__Users__idRole__45F365D3, string password, UserStatusRow parentUserStatusRowByFK__Users__idStatus__46E78A0C) {
                 UsersRow rowUsersRow = ((UsersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -3516,11 +3492,11 @@ namespace MantenimientoEquipos {
                         null,
                         password,
                         null};
-                if ((parentRolesRowByFK__Users__idRole__46E78A0C != null)) {
-                    columnValuesArray[3] = parentRolesRowByFK__Users__idRole__46E78A0C[0];
+                if ((parentRolesRowByFK__Users__idRole__45F365D3 != null)) {
+                    columnValuesArray[3] = parentRolesRowByFK__Users__idRole__45F365D3[0];
                 }
-                if ((parentUserStatusRowByFK__Users__idStatus__47DBAE45 != null)) {
-                    columnValuesArray[5] = parentUserStatusRowByFK__Users__idStatus__47DBAE45[0];
+                if ((parentUserStatusRowByFK__Users__idStatus__46E78A0C != null)) {
+                    columnValuesArray[5] = parentUserStatusRowByFK__Users__idStatus__46E78A0C[0];
                 }
                 rowUsersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowUsersRow);
@@ -4068,17 +4044,6 @@ namespace MantenimientoEquipos {
             public void SetdescriptionNull() {
                 this[this.tableAreas.descriptionColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DevicesRow[] GetDevicesRows() {
-                if ((this.Table.ChildRelations["FK__Devices__idArea__5EBF139D"] == null)) {
-                    return new DevicesRow[0];
-                }
-                else {
-                    return ((DevicesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devices__idArea__5EBF139D"])));
-                }
-            }
         }
         
         /// <summary>
@@ -4137,11 +4102,11 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DevicesRow[] GetDevicesRows() {
-                if ((this.Table.ChildRelations["FK__Devices__idBrand__5DCAEF64"] == null)) {
+                if ((this.Table.ChildRelations["FK__Devices__idBrand__4AB81AF0"] == null)) {
                     return new DevicesRow[0];
                 }
                 else {
-                    return ((DevicesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devices__idBrand__5DCAEF64"])));
+                    return ((DevicesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devices__idBrand__4AB81AF0"])));
                 }
             }
         }
@@ -4237,22 +4202,6 @@ namespace MantenimientoEquipos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int idArea {
-                get {
-                    try {
-                        return ((int)(this[this.tableDevices.idAreaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'idArea\' de la tabla \'Devices\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDevices.idAreaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int idStatus {
                 get {
                     try {
@@ -4269,23 +4218,12 @@ namespace MantenimientoEquipos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public AreasRow AreasRow {
-                get {
-                    return ((AreasRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devices__idArea__5EBF139D"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devices__idArea__5EBF139D"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public BrandsRow BrandsRow {
                 get {
-                    return ((BrandsRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devices__idBrand__5DCAEF64"])));
+                    return ((BrandsRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devices__idBrand__4AB81AF0"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devices__idBrand__5DCAEF64"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devices__idBrand__4AB81AF0"]);
                 }
             }
             
@@ -4293,10 +4231,10 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DeviceTypesRow DeviceTypesRow {
                 get {
-                    return ((DeviceTypesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devices__idDevic__5CD6CB2B"])));
+                    return ((DeviceTypesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devices__idDevic__49C3F6B7"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devices__idDevic__5CD6CB2B"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devices__idDevic__49C3F6B7"]);
                 }
             }
             
@@ -4304,10 +4242,10 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DeviceStatusRow DeviceStatusRow {
                 get {
-                    return ((DeviceStatusRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devices__idStatu__5FB337D6"])));
+                    return ((DeviceStatusRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devices__idStatu__4BAC3F29"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devices__idStatu__5FB337D6"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devices__idStatu__4BAC3F29"]);
                 }
             }
             
@@ -4357,18 +4295,6 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetidBrandNull() {
                 this[this.tableDevices.idBrandColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsidAreaNull() {
-                return this.IsNull(this.tableDevices.idAreaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetidAreaNull() {
-                this[this.tableDevices.idAreaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4440,11 +4366,11 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DevicesRow[] GetDevicesRows() {
-                if ((this.Table.ChildRelations["FK__Devices__idStatu__5FB337D6"] == null)) {
+                if ((this.Table.ChildRelations["FK__Devices__idStatu__4BAC3F29"] == null)) {
                     return new DevicesRow[0];
                 }
                 else {
-                    return ((DevicesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devices__idStatu__5FB337D6"])));
+                    return ((DevicesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devices__idStatu__4BAC3F29"])));
                 }
             }
         }
@@ -4505,11 +4431,11 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DevicesRow[] GetDevicesRows() {
-                if ((this.Table.ChildRelations["FK__Devices__idDevic__5CD6CB2B"] == null)) {
+                if ((this.Table.ChildRelations["FK__Devices__idDevic__49C3F6B7"] == null)) {
                     return new DevicesRow[0];
                 }
                 else {
-                    return ((DevicesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devices__idDevic__5CD6CB2B"])));
+                    return ((DevicesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devices__idDevic__49C3F6B7"])));
                 }
             }
         }
@@ -4570,11 +4496,11 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ManteinancesRow[] GetManteinancesRows() {
-                if ((this.Table.ChildRelations["FK__Manteinan__idMan__6383C8BA"] == null)) {
+                if ((this.Table.ChildRelations["FK__Manteinan__idMan__4F7CD00D"] == null)) {
                     return new ManteinancesRow[0];
                 }
                 else {
-                    return ((ManteinancesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Manteinan__idMan__6383C8BA"])));
+                    return ((ManteinancesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Manteinan__idMan__4F7CD00D"])));
                 }
             }
         }
@@ -4704,10 +4630,10 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ManteinanceTypesRow ManteinanceTypesRow {
                 get {
-                    return ((ManteinanceTypesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Manteinan__idMan__628FA481"])));
+                    return ((ManteinanceTypesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Manteinan__idMan__4E88ABD4"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Manteinan__idMan__628FA481"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Manteinan__idMan__4E88ABD4"]);
                 }
             }
             
@@ -4715,10 +4641,10 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ManteinanceNaturesRow ManteinanceNaturesRow {
                 get {
-                    return ((ManteinanceNaturesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Manteinan__idMan__6383C8BA"])));
+                    return ((ManteinanceNaturesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Manteinan__idMan__4F7CD00D"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Manteinan__idMan__6383C8BA"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Manteinan__idMan__4F7CD00D"]);
                 }
             }
             
@@ -4726,10 +4652,10 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UsersRow UsersRow {
                 get {
-                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Manteinan__idUse__6477ECF3"])));
+                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Manteinan__idUse__5070F446"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Manteinan__idUse__6477ECF3"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Manteinan__idUse__5070F446"]);
                 }
             }
             
@@ -4862,11 +4788,11 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ManteinancesRow[] GetManteinancesRows() {
-                if ((this.Table.ChildRelations["FK__Manteinan__idMan__628FA481"] == null)) {
+                if ((this.Table.ChildRelations["FK__Manteinan__idMan__4E88ABD4"] == null)) {
                     return new ManteinancesRow[0];
                 }
                 else {
-                    return ((ManteinancesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Manteinan__idMan__628FA481"])));
+                    return ((ManteinancesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Manteinan__idMan__4E88ABD4"])));
                 }
             }
         }
@@ -4955,11 +4881,11 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UsersRow[] GetUsersRows() {
-                if ((this.Table.ChildRelations["FK__Users__idRole__46E78A0C"] == null)) {
+                if ((this.Table.ChildRelations["FK__Users__idRole__45F365D3"] == null)) {
                     return new UsersRow[0];
                 }
                 else {
-                    return ((UsersRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Users__idRole__46E78A0C"])));
+                    return ((UsersRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Users__idRole__45F365D3"])));
                 }
             }
         }
@@ -5073,10 +4999,10 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public RolesRow RolesRow {
                 get {
-                    return ((RolesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Users__idRole__46E78A0C"])));
+                    return ((RolesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Users__idRole__45F365D3"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Users__idRole__46E78A0C"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Users__idRole__45F365D3"]);
                 }
             }
             
@@ -5084,10 +5010,10 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UserStatusRow UserStatusRow {
                 get {
-                    return ((UserStatusRow)(this.GetParentRow(this.Table.ParentRelations["FK__Users__idStatus__47DBAE45"])));
+                    return ((UserStatusRow)(this.GetParentRow(this.Table.ParentRelations["FK__Users__idStatus__46E78A0C"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Users__idStatus__47DBAE45"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Users__idStatus__46E78A0C"]);
                 }
             }
             
@@ -5154,11 +5080,11 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ManteinancesRow[] GetManteinancesRows() {
-                if ((this.Table.ChildRelations["FK__Manteinan__idUse__6477ECF3"] == null)) {
+                if ((this.Table.ChildRelations["FK__Manteinan__idUse__5070F446"] == null)) {
                     return new ManteinancesRow[0];
                 }
                 else {
-                    return ((ManteinancesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Manteinan__idUse__6477ECF3"])));
+                    return ((ManteinancesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Manteinan__idUse__5070F446"])));
                 }
             }
         }
@@ -5219,11 +5145,11 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UsersRow[] GetUsersRows() {
-                if ((this.Table.ChildRelations["FK__Users__idStatus__47DBAE45"] == null)) {
+                if ((this.Table.ChildRelations["FK__Users__idStatus__46E78A0C"] == null)) {
                     return new UsersRow[0];
                 }
                 else {
-                    return ((UsersRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Users__idStatus__47DBAE45"])));
+                    return ((UsersRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Users__idStatus__46E78A0C"])));
                 }
             }
         }
@@ -5768,7 +5694,7 @@ SELECT idArea, name, description FROM Areas WHERE (idArea = @idArea)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString;
+            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6120,7 +6046,7 @@ SELECT idArea, name, description FROM Areas WHERE (idArea = @idArea)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString;
+            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6415,12 +6341,11 @@ SELECT idArea, name, description FROM Areas WHERE (idArea = @idArea)";
             tableMapping.ColumnMappings.Add("model", "model");
             tableMapping.ColumnMappings.Add("idDeviceType", "idDeviceType");
             tableMapping.ColumnMappings.Add("idBrand", "idBrand");
-            tableMapping.ColumnMappings.Add("idArea", "idArea");
             tableMapping.ColumnMappings.Add("idStatus", "idStatus");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Devices] WHERE (([idDevice] = @Original_idDevice) AND ((@IsNull_serialNumber = 1 AND [serialNumber] IS NULL) OR ([serialNumber] = @Original_serialNumber)) AND ((@IsNull_model = 1 AND [model] IS NULL) OR ([model] = @Original_model)) AND ((@IsNull_idDeviceType = 1 AND [idDeviceType] IS NULL) OR ([idDeviceType] = @Original_idDeviceType)) AND ((@IsNull_idBrand = 1 AND [idBrand] IS NULL) OR ([idBrand] = @Original_idBrand)) AND ((@IsNull_idArea = 1 AND [idArea] IS NULL) OR ([idArea] = @Original_idArea)) AND ((@IsNull_idStatus = 1 AND [idStatus] IS NULL) OR ([idStatus] = @Original_idStatus)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Devices] WHERE (([idDevice] = @Original_idDevice) AND ((@IsNull_serialNumber = 1 AND [serialNumber] IS NULL) OR ([serialNumber] = @Original_serialNumber)) AND ((@IsNull_model = 1 AND [model] IS NULL) OR ([model] = @Original_model)) AND ((@IsNull_idDeviceType = 1 AND [idDeviceType] IS NULL) OR ([idDeviceType] = @Original_idDeviceType)) AND ((@IsNull_idBrand = 1 AND [idBrand] IS NULL) OR ([idBrand] = @Original_idBrand)) AND ((@IsNull_idStatus = 1 AND [idStatus] IS NULL) OR ([idStatus] = @Original_idStatus)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idDevice", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idDevice", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_serialNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "serialNumber", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -6431,31 +6356,27 @@ SELECT idArea, name, description FROM Areas WHERE (idArea = @idArea)";
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idDeviceType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idDeviceType", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_idBrand", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idBrand", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idBrand", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idBrand", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_idArea", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idArea", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idArea", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idArea", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_idStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idStatus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idStatus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Devices] ([serialNumber], [model], [idDeviceType], [idBrand], [idArea], [idStatus]) VALUES (@serialNumber, @model, @idDeviceType, @idBrand, @idArea, @idStatus);
-SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idArea, idStatus FROM Devices WHERE (idDevice = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Devices] ([serialNumber], [model], [idDeviceType], [idBrand], [idStatus]) VALUES (@serialNumber, @model, @idDeviceType, @idBrand, @idStatus);
+SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idStatus FROM Devices WHERE (idDevice = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@serialNumber", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "serialNumber", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@model", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "model", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idDeviceType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idDeviceType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idBrand", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idBrand", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idArea", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idArea", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idStatus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Devices] SET [serialNumber] = @serialNumber, [model] = @model, [idDeviceType] = @idDeviceType, [idBrand] = @idBrand, [idArea] = @idArea, [idStatus] = @idStatus WHERE (([idDevice] = @Original_idDevice) AND ((@IsNull_serialNumber = 1 AND [serialNumber] IS NULL) OR ([serialNumber] = @Original_serialNumber)) AND ((@IsNull_model = 1 AND [model] IS NULL) OR ([model] = @Original_model)) AND ((@IsNull_idDeviceType = 1 AND [idDeviceType] IS NULL) OR ([idDeviceType] = @Original_idDeviceType)) AND ((@IsNull_idBrand = 1 AND [idBrand] IS NULL) OR ([idBrand] = @Original_idBrand)) AND ((@IsNull_idArea = 1 AND [idArea] IS NULL) OR ([idArea] = @Original_idArea)) AND ((@IsNull_idStatus = 1 AND [idStatus] IS NULL) OR ([idStatus] = @Original_idStatus)));
-SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idArea, idStatus FROM Devices WHERE (idDevice = @idDevice)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Devices] SET [serialNumber] = @serialNumber, [model] = @model, [idDeviceType] = @idDeviceType, [idBrand] = @idBrand, [idStatus] = @idStatus WHERE (([idDevice] = @Original_idDevice) AND ((@IsNull_serialNumber = 1 AND [serialNumber] IS NULL) OR ([serialNumber] = @Original_serialNumber)) AND ((@IsNull_model = 1 AND [model] IS NULL) OR ([model] = @Original_model)) AND ((@IsNull_idDeviceType = 1 AND [idDeviceType] IS NULL) OR ([idDeviceType] = @Original_idDeviceType)) AND ((@IsNull_idBrand = 1 AND [idBrand] IS NULL) OR ([idBrand] = @Original_idBrand)) AND ((@IsNull_idStatus = 1 AND [idStatus] IS NULL) OR ([idStatus] = @Original_idStatus)));
+SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idStatus FROM Devices WHERE (idDevice = @idDevice)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@serialNumber", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "serialNumber", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@model", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "model", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idDeviceType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idDeviceType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idBrand", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idBrand", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idArea", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idArea", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idStatus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idDevice", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idDevice", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_serialNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "serialNumber", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -6466,8 +6387,6 @@ SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idArea, idStatus FR
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idDeviceType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idDeviceType", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_idBrand", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idBrand", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idBrand", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idBrand", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_idArea", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idArea", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idArea", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idArea", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_idStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idStatus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idStatus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idDevice", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "idDevice", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -6477,7 +6396,7 @@ SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idArea, idStatus FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString;
+            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6486,8 +6405,8 @@ SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idArea, idStatus FR
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idArea, idStatus FRO" +
-                "M dbo.Devices";
+            this._commandCollection[0].CommandText = "SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idStatus FROM dbo.De" +
+                "vices";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -6548,7 +6467,7 @@ SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idArea, idStatus FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_idDevice, string Original_serialNumber, string Original_model, global::System.Nullable<int> Original_idDeviceType, global::System.Nullable<int> Original_idBrand, global::System.Nullable<int> Original_idArea, global::System.Nullable<int> Original_idStatus) {
+        public virtual int Delete(int Original_idDevice, string Original_serialNumber, string Original_model, global::System.Nullable<int> Original_idDeviceType, global::System.Nullable<int> Original_idBrand, global::System.Nullable<int> Original_idStatus) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_idDevice));
             if ((Original_serialNumber == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -6582,21 +6501,13 @@ SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idArea, idStatus FR
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            if ((Original_idArea.HasValue == true)) {
+            if ((Original_idStatus.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_idArea.Value));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_idStatus.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            if ((Original_idStatus.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((int)(Original_idStatus.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -6618,7 +6529,7 @@ SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idArea, idStatus FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string serialNumber, string model, global::System.Nullable<int> idDeviceType, global::System.Nullable<int> idBrand, global::System.Nullable<int> idArea, global::System.Nullable<int> idStatus) {
+        public virtual int Insert(string serialNumber, string model, global::System.Nullable<int> idDeviceType, global::System.Nullable<int> idBrand, global::System.Nullable<int> idStatus) {
             if ((serialNumber == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -6643,17 +6554,11 @@ SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idArea, idStatus FR
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((idArea.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(idArea.Value));
+            if ((idStatus.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(idStatus.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((idStatus.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((int)(idStatus.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -6675,7 +6580,7 @@ SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idArea, idStatus FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string serialNumber, string model, global::System.Nullable<int> idDeviceType, global::System.Nullable<int> idBrand, global::System.Nullable<int> idArea, global::System.Nullable<int> idStatus, int Original_idDevice, string Original_serialNumber, string Original_model, global::System.Nullable<int> Original_idDeviceType, global::System.Nullable<int> Original_idBrand, global::System.Nullable<int> Original_idArea, global::System.Nullable<int> Original_idStatus, int idDevice) {
+        public virtual int Update(string serialNumber, string model, global::System.Nullable<int> idDeviceType, global::System.Nullable<int> idBrand, global::System.Nullable<int> idStatus, int Original_idDevice, string Original_serialNumber, string Original_model, global::System.Nullable<int> Original_idDeviceType, global::System.Nullable<int> Original_idBrand, global::System.Nullable<int> Original_idStatus, int idDevice) {
             if ((serialNumber == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -6700,68 +6605,54 @@ SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idArea, idStatus FR
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((idArea.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(idArea.Value));
+            if ((idStatus.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(idStatus.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((idStatus.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(idStatus.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_idDevice));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_idDevice));
             if ((Original_serialNumber == null)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_serialNumber));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_serialNumber));
             }
             if ((Original_model == null)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_model));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_model));
             }
             if ((Original_idDeviceType.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_idDeviceType.Value));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_idDeviceType.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             if ((Original_idBrand.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_idBrand.Value));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_idBrand.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
-            }
-            if ((Original_idArea.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Original_idArea.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             if ((Original_idStatus.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((int)(Original_idStatus.Value));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Original_idStatus.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(idDevice));
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(idDevice));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -6782,8 +6673,8 @@ SELECT idDevice, serialNumber, model, idDeviceType, idBrand, idArea, idStatus FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string serialNumber, string model, global::System.Nullable<int> idDeviceType, global::System.Nullable<int> idBrand, global::System.Nullable<int> idArea, global::System.Nullable<int> idStatus, int Original_idDevice, string Original_serialNumber, string Original_model, global::System.Nullable<int> Original_idDeviceType, global::System.Nullable<int> Original_idBrand, global::System.Nullable<int> Original_idArea, global::System.Nullable<int> Original_idStatus) {
-            return this.Update(serialNumber, model, idDeviceType, idBrand, idArea, idStatus, Original_idDevice, Original_serialNumber, Original_model, Original_idDeviceType, Original_idBrand, Original_idArea, Original_idStatus, Original_idDevice);
+        public virtual int Update(string serialNumber, string model, global::System.Nullable<int> idDeviceType, global::System.Nullable<int> idBrand, global::System.Nullable<int> idStatus, int Original_idDevice, string Original_serialNumber, string Original_model, global::System.Nullable<int> Original_idDeviceType, global::System.Nullable<int> Original_idBrand, global::System.Nullable<int> Original_idStatus) {
+            return this.Update(serialNumber, model, idDeviceType, idBrand, idStatus, Original_idDevice, Original_serialNumber, Original_model, Original_idDeviceType, Original_idBrand, Original_idStatus, Original_idDevice);
         }
     }
     
@@ -6941,7 +6832,7 @@ SELECT idDeviceStatus, name FROM DeviceStatus WHERE (idDeviceStatus = @idDeviceS
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString;
+            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7266,7 +7157,7 @@ SELECT idDeviceStatus, name FROM DeviceStatus WHERE (idDeviceStatus = @idDeviceS
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString;
+            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7591,7 +7482,7 @@ SELECT idManteinanceNature, name FROM ManteinanceNatures WHERE (idManteinanceNat
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString;
+            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7948,7 +7839,7 @@ SELECT idManteinance, startDate, lastDate, idManType, idManNat, idUser, descript
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString;
+            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8413,7 +8304,7 @@ SELECT idManteinanceType, name FROM ManteinanceTypes WHERE (idManteinanceType = 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString;
+            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8744,7 +8635,7 @@ SELECT idRole, name, description FROM Roles WHERE (idRole = @idRole)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString;
+            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9123,7 +9014,7 @@ SELECT idUser, name, email, idRole, password, idStatus FROM Users WHERE (idUser 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString;
+            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9560,7 +9451,7 @@ SELECT idUser, name, email, idRole, password, idStatus FROM Users WHERE (idUser 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString;
+            this._connection.ConnectionString = global::MantenimientoEquipos.Properties.Settings.Default.MetAgileConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10070,15 +9961,6 @@ SELECT idUser, name, email, idRole, password, idStatus FROM Users WHERE (idUser 
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._areasTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Areas.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._areasTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._brandsTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Brands.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -10133,6 +10015,15 @@ SELECT idUser, name, email, idRole, password, idStatus FROM Users WHERE (idUser 
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._areasTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Areas.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._areasTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._devicesTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Devices.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -10174,14 +10065,6 @@ SELECT idUser, name, email, idRole, password, idStatus FROM Users WHERE (idUser 
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._userStatusTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._areasTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Areas.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._areasTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -10233,6 +10116,14 @@ SELECT idUser, name, email, idRole, password, idStatus FROM Users WHERE (idUser 
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._areasTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Areas.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._areasTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._devicesTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Devices.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -10272,6 +10163,14 @@ SELECT idUser, name, email, idRole, password, idStatus FROM Users WHERE (idUser 
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._devicesTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._areasTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Areas.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._areasTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -10320,14 +10219,6 @@ SELECT idUser, name, email, idRole, password, idStatus FROM Users WHERE (idUser 
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._brandsTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._areasTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Areas.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._areasTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
