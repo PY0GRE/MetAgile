@@ -31,13 +31,13 @@
             this.estandarTitleLabel1 = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
             this.estandarLabel1 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.estandarLabel2 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
-            this.estandarTextBox2 = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
+            this.txtNombreArea = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
             this.estandarTextBox1 = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
             this.estandarLabel3 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.estandarLabel4 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.estandarTextBox3 = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
-            this.estandarTextBox4 = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
-            this.btnNuevoRol = new MantenimientoEquipos.ModifierComponents.EstandarButton();
+            this.txtDescripcion = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
+            this.BtnAgregarArea = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.SuspendLayout();
             // 
             // estandarTitleLabel1
@@ -76,15 +76,15 @@
             this.estandarLabel2.TabIndex = 17;
             this.estandarLabel2.Text = "Responsable";
             // 
-            // estandarTextBox2
+            // txtNombreArea
             // 
-            this.estandarTextBox2.BorderRadius = 20;
-            this.estandarTextBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estandarTextBox2.Location = new System.Drawing.Point(28, 130);
-            this.estandarTextBox2.Margin = new System.Windows.Forms.Padding(10);
-            this.estandarTextBox2.Name = "estandarTextBox2";
-            this.estandarTextBox2.Size = new System.Drawing.Size(289, 27);
-            this.estandarTextBox2.TabIndex = 16;
+            this.txtNombreArea.BorderRadius = 20;
+            this.txtNombreArea.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreArea.Location = new System.Drawing.Point(28, 130);
+            this.txtNombreArea.Margin = new System.Windows.Forms.Padding(10);
+            this.txtNombreArea.Name = "txtNombreArea";
+            this.txtNombreArea.Size = new System.Drawing.Size(289, 27);
+            this.txtNombreArea.TabIndex = 16;
             // 
             // estandarTextBox1
             // 
@@ -130,48 +130,49 @@
             this.estandarTextBox3.Size = new System.Drawing.Size(289, 27);
             this.estandarTextBox3.TabIndex = 21;
             // 
-            // estandarTextBox4
+            // txtDescripcion
             // 
-            this.estandarTextBox4.BorderRadius = 20;
-            this.estandarTextBox4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estandarTextBox4.Location = new System.Drawing.Point(28, 394);
-            this.estandarTextBox4.Margin = new System.Windows.Forms.Padding(10);
-            this.estandarTextBox4.Name = "estandarTextBox4";
-            this.estandarTextBox4.Size = new System.Drawing.Size(289, 27);
-            this.estandarTextBox4.TabIndex = 22;
+            this.txtDescripcion.BorderRadius = 20;
+            this.txtDescripcion.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Location = new System.Drawing.Point(28, 394);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(10);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(289, 27);
+            this.txtDescripcion.TabIndex = 22;
             // 
-            // btnNuevoRol
+            // BtnAgregarArea
             // 
-            this.btnNuevoRol.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnNuevoRol.BorderRadius = 20;
-            this.btnNuevoRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevoRol.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoRol.ForeColor = System.Drawing.Color.White;
-            this.btnNuevoRol.Location = new System.Drawing.Point(533, 403);
-            this.btnNuevoRol.Name = "btnNuevoRol";
-            this.btnNuevoRol.Size = new System.Drawing.Size(116, 35);
-            this.btnNuevoRol.TabIndex = 23;
-            this.btnNuevoRol.Text = "Agregar Area ";
-            this.btnNuevoRol.UseVisualStyleBackColor = false;
-            this.btnNuevoRol.Click += new System.EventHandler(this.btnNuevoRol_Click);
+            this.BtnAgregarArea.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnAgregarArea.BorderRadius = 20;
+            this.BtnAgregarArea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgregarArea.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregarArea.ForeColor = System.Drawing.Color.White;
+            this.BtnAgregarArea.Location = new System.Drawing.Point(533, 403);
+            this.BtnAgregarArea.Name = "BtnAgregarArea";
+            this.BtnAgregarArea.Size = new System.Drawing.Size(116, 35);
+            this.BtnAgregarArea.TabIndex = 23;
+            this.BtnAgregarArea.Text = "Agregar Area ";
+            this.BtnAgregarArea.UseVisualStyleBackColor = false;
+            this.BtnAgregarArea.Click += new System.EventHandler(this.btnNuevoRol_Click);
             // 
             // Areas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(661, 450);
-            this.Controls.Add(this.btnNuevoRol);
-            this.Controls.Add(this.estandarTextBox4);
+            this.Controls.Add(this.BtnAgregarArea);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.estandarTextBox3);
             this.Controls.Add(this.estandarLabel4);
             this.Controls.Add(this.estandarLabel3);
             this.Controls.Add(this.estandarLabel1);
             this.Controls.Add(this.estandarLabel2);
-            this.Controls.Add(this.estandarTextBox2);
+            this.Controls.Add(this.txtNombreArea);
             this.Controls.Add(this.estandarTextBox1);
             this.Controls.Add(this.estandarTitleLabel1);
             this.Name = "Areas";
             this.Text = "Areas";
+            this.Load += new System.EventHandler(this.Areas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,12 +183,12 @@
         private ModifierComponents.EstandarTitleLabel estandarTitleLabel1;
         private ModifierComponents.EstandarLabel estandarLabel1;
         private ModifierComponents.EstandarLabel estandarLabel2;
-        private ModifierComponents.EstandarTextBox estandarTextBox2;
+        private ModifierComponents.EstandarTextBox txtNombreArea;
         private ModifierComponents.EstandarTextBox estandarTextBox1;
         private ModifierComponents.EstandarLabel estandarLabel3;
         private ModifierComponents.EstandarLabel estandarLabel4;
         private ModifierComponents.EstandarTextBox estandarTextBox3;
-        private ModifierComponents.EstandarTextBox estandarTextBox4;
-        private ModifierComponents.EstandarButton btnNuevoRol;
+        private ModifierComponents.EstandarTextBox txtDescripcion;
+        private ModifierComponents.EstandarButton BtnAgregarArea;
     }
 }
