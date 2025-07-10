@@ -58,7 +58,7 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.estandarDataView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.estandarDataView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.estandarDataView1.BackgroundColor = System.Drawing.Color.White;
+            this.estandarDataView1.BackgroundColor = System.Drawing.Color.Silver;
             this.estandarDataView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.estandarDataView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -80,15 +80,18 @@
             this.estandarDataView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.estandarDataView1.EnableHeadersVisualStyles = false;
             this.estandarDataView1.GridColor = System.Drawing.Color.LightGray;
-            this.estandarDataView1.Location = new System.Drawing.Point(92, 102);
+            this.estandarDataView1.Location = new System.Drawing.Point(90, 95);
+            this.estandarDataView1.MultiSelect = false;
             this.estandarDataView1.Name = "estandarDataView1";
+            this.estandarDataView1.ReadOnly = true;
             this.estandarDataView1.RowHeadersVisible = false;
+            this.estandarDataView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.estandarDataView1.Size = new System.Drawing.Size(597, 303);
             this.estandarDataView1.TabIndex = 4;
             // 
             // estandarButton1
             // 
-            this.estandarButton1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.estandarButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.estandarButton1.BorderRadius = 20;
             this.estandarButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.estandarButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -102,7 +105,7 @@
             // 
             // bttUsuariosModificar
             // 
-            this.bttUsuariosModificar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttUsuariosModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.bttUsuariosModificar.BorderRadius = 20;
             this.bttUsuariosModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttUsuariosModificar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -116,7 +119,7 @@
             // 
             // bttUsuariosRegresar
             // 
-            this.bttUsuariosRegresar.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttUsuariosRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.bttUsuariosRegresar.BorderRadius = 20;
             this.bttUsuariosRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttUsuariosRegresar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
