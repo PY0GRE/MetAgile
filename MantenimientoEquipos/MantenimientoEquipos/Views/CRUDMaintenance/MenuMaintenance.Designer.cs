@@ -1,4 +1,4 @@
-﻿namespace MantenimientoEquipos.Views
+﻿namespace MantenimientoEquipos.Views.CRUDMaintenance
 {
     partial class MenuMaintenance
     {
@@ -13,7 +13,7 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if ( disposing && ( components != null ) )
+            if (disposing && (components != null))
             {
                 components.Dispose();
             }
@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.estandarTitleLabel1 = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
-            this.estandarButton1 = new MantenimientoEquipos.ModifierComponents.EstandarButton();
-            this.estandarButton2 = new MantenimientoEquipos.ModifierComponents.EstandarButton();
-            this.estandarButton3 = new MantenimientoEquipos.ModifierComponents.EstandarButton();
+            this.bttAdd = new MantenimientoEquipos.ModifierComponents.EstandarButton();
+            this.bttDelete = new MantenimientoEquipos.ModifierComponents.EstandarButton();
+            this.bttModify = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.bttReturn = new MantenimientoEquipos.ModifierComponents.EstandarButton();
-            this.estandarDataView1 = new MantenimientoEquipos.ModifierComponents.EstandarDataView();
-            ((System.ComponentModel.ISupportInitialize)(this.estandarDataView1)).BeginInit();
+            this.dtView = new MantenimientoEquipos.ModifierComponents.EstandarDataView();
+            this.txtId = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtView)).BeginInit();
             this.SuspendLayout();
             // 
             // estandarTitleLabel1
@@ -45,59 +46,54 @@
             this.estandarTitleLabel1.AutoSize = true;
             this.estandarTitleLabel1.Font = new System.Drawing.Font("Calibri", 25F, System.Drawing.FontStyle.Bold);
             this.estandarTitleLabel1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.estandarTitleLabel1.Location = new System.Drawing.Point(80, 7);
-            this.estandarTitleLabel1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.estandarTitleLabel1.Location = new System.Drawing.Point(41, 41);
+            this.estandarTitleLabel1.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.estandarTitleLabel1.Name = "estandarTitleLabel1";
-            this.estandarTitleLabel1.Size = new System.Drawing.Size(491, 41);
+            this.estandarTitleLabel1.Size = new System.Drawing.Size(324, 51);
             this.estandarTitleLabel1.TabIndex = 0;
-            this.estandarTitleLabel1.Text = "Mantenimientos - Menú principal";
+            this.estandarTitleLabel1.Text = "Mantenimientos ";
             // 
-            // estandarButton1
+            // bttAdd
             // 
-            this.estandarButton1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.estandarButton1.BorderRadius = 20;
-            this.estandarButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.estandarButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estandarButton1.ForeColor = System.Drawing.Color.White;
-            this.estandarButton1.Location = new System.Drawing.Point(106, 76);
-            this.estandarButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.estandarButton1.Name = "estandarButton1";
-            this.estandarButton1.Size = new System.Drawing.Size(92, 28);
-            this.estandarButton1.TabIndex = 1;
-            this.estandarButton1.Text = "Agregar";
-            this.estandarButton1.UseVisualStyleBackColor = false;
-            this.estandarButton1.Click += new System.EventHandler(this.estandarButton1_Click);
+            this.bttAdd.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttAdd.BorderRadius = 20;
+            this.bttAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttAdd.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttAdd.ForeColor = System.Drawing.Color.White;
+            this.bttAdd.Location = new System.Drawing.Point(1240, 151);
+            this.bttAdd.Name = "bttAdd";
+            this.bttAdd.Size = new System.Drawing.Size(156, 43);
+            this.bttAdd.TabIndex = 7;
+            this.bttAdd.Text = "Agregar";
+            this.bttAdd.UseVisualStyleBackColor = false;
             // 
-            // estandarButton2
+            // bttDelete
             // 
-            this.estandarButton2.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.estandarButton2.BorderRadius = 20;
-            this.estandarButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.estandarButton2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estandarButton2.ForeColor = System.Drawing.Color.White;
-            this.estandarButton2.Location = new System.Drawing.Point(202, 76);
-            this.estandarButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.estandarButton2.Name = "estandarButton2";
-            this.estandarButton2.Size = new System.Drawing.Size(92, 28);
-            this.estandarButton2.TabIndex = 2;
-            this.estandarButton2.Text = "Ver";
-            this.estandarButton2.UseVisualStyleBackColor = false;
+            this.bttDelete.BackColor = System.Drawing.Color.IndianRed;
+            this.bttDelete.BorderRadius = 20;
+            this.bttDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttDelete.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttDelete.ForeColor = System.Drawing.Color.White;
+            this.bttDelete.Location = new System.Drawing.Point(1061, 151);
+            this.bttDelete.Name = "bttDelete";
+            this.bttDelete.Size = new System.Drawing.Size(156, 43);
+            this.bttDelete.TabIndex = 8;
+            this.bttDelete.Text = "Baja";
+            this.bttDelete.UseVisualStyleBackColor = false;
             // 
-            // estandarButton3
+            // bttModify
             // 
-            this.estandarButton3.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.estandarButton3.BorderRadius = 20;
-            this.estandarButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.estandarButton3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estandarButton3.ForeColor = System.Drawing.Color.White;
-            this.estandarButton3.Location = new System.Drawing.Point(10, 76);
-            this.estandarButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.estandarButton3.Name = "estandarButton3";
-            this.estandarButton3.Size = new System.Drawing.Size(92, 28);
-            this.estandarButton3.TabIndex = 3;
-            this.estandarButton3.Text = "Actualizar";
-            this.estandarButton3.UseVisualStyleBackColor = false;
-            this.estandarButton3.Click += new System.EventHandler(this.estandarButton3_Click);
+            this.bttModify.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttModify.BorderRadius = 20;
+            this.bttModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttModify.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttModify.ForeColor = System.Drawing.Color.White;
+            this.bttModify.Location = new System.Drawing.Point(1240, 102);
+            this.bttModify.Name = "bttModify";
+            this.bttModify.Size = new System.Drawing.Size(156, 43);
+            this.bttModify.TabIndex = 9;
+            this.bttModify.Text = "Modificar";
+            this.bttModify.UseVisualStyleBackColor = false;
             // 
             // bttReturn
             // 
@@ -106,68 +102,80 @@
             this.bttReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttReturn.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttReturn.ForeColor = System.Drawing.Color.White;
-            this.bttReturn.Location = new System.Drawing.Point(476, 345);
-            this.bttReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bttReturn.Location = new System.Drawing.Point(1240, 56);
             this.bttReturn.Name = "bttReturn";
-            this.bttReturn.Size = new System.Drawing.Size(141, 28);
-            this.bttReturn.TabIndex = 5;
-            this.bttReturn.Text = "Regresar al menú";
+            this.bttReturn.Size = new System.Drawing.Size(156, 43);
+            this.bttReturn.TabIndex = 10;
+            this.bttReturn.Text = "Regresar";
             this.bttReturn.UseVisualStyleBackColor = false;
-            this.bttReturn.Click += new System.EventHandler(this.bttReturn_Click);
             // 
-            // estandarDataView1
+            // dtView
             // 
-            this.estandarDataView1.AllowUserToAddRows = false;
-            this.estandarDataView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.estandarDataView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.estandarDataView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.estandarDataView1.BackgroundColor = System.Drawing.Color.White;
-            this.estandarDataView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.estandarDataView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.estandarDataView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.estandarDataView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 10F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.estandarDataView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.estandarDataView1.EnableHeadersVisualStyles = false;
-            this.estandarDataView1.GridColor = System.Drawing.Color.LightGray;
-            this.estandarDataView1.Location = new System.Drawing.Point(10, 109);
-            this.estandarDataView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.estandarDataView1.Name = "estandarDataView1";
-            this.estandarDataView1.RowHeadersVisible = false;
-            this.estandarDataView1.RowHeadersWidth = 51;
-            this.estandarDataView1.RowTemplate.Height = 24;
-            this.estandarDataView1.Size = new System.Drawing.Size(608, 224);
-            this.estandarDataView1.TabIndex = 6;
+            this.dtView.AllowUserToAddRows = false;
+            this.dtView.AllowUserToResizeRows = false;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dtView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dtView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtView.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.dtView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dtView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Calibri", 10F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtView.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dtView.EnableHeadersVisualStyles = false;
+            this.dtView.GridColor = System.Drawing.Color.LightGray;
+            this.dtView.Location = new System.Drawing.Point(50, 219);
+            this.dtView.MultiSelect = false;
+            this.dtView.Name = "dtView";
+            this.dtView.ReadOnly = true;
+            this.dtView.RowHeadersVisible = false;
+            this.dtView.RowHeadersWidth = 51;
+            this.dtView.RowTemplate.Height = 24;
+            this.dtView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtView.Size = new System.Drawing.Size(1346, 387);
+            this.dtView.TabIndex = 11;
+            // 
+            // txtId
+            // 
+            this.txtId.BorderRadius = 20;
+            this.txtId.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Location = new System.Drawing.Point(69, 619);
+            this.txtId.Margin = new System.Windows.Forms.Padding(10);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 32);
+            this.txtId.TabIndex = 12;
+            this.txtId.Visible = false;
             // 
             // MenuMaintenance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 384);
-            this.Controls.Add(this.estandarDataView1);
+            this.ClientSize = new System.Drawing.Size(1434, 694);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.dtView);
             this.Controls.Add(this.bttReturn);
-            this.Controls.Add(this.estandarButton3);
-            this.Controls.Add(this.estandarButton2);
-            this.Controls.Add(this.estandarButton1);
+            this.Controls.Add(this.bttModify);
+            this.Controls.Add(this.bttDelete);
+            this.Controls.Add(this.bttAdd);
             this.Controls.Add(this.estandarTitleLabel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MenuMaintenance";
             this.Text = "MenuMaintenance";
-            ((System.ComponentModel.ISupportInitialize)(this.estandarDataView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,10 +184,11 @@
         #endregion
 
         private ModifierComponents.EstandarTitleLabel estandarTitleLabel1;
-        private ModifierComponents.EstandarButton estandarButton1;
-        private ModifierComponents.EstandarButton estandarButton2;
-        private ModifierComponents.EstandarButton estandarButton3;
+        private ModifierComponents.EstandarButton bttAdd;
+        private ModifierComponents.EstandarButton bttDelete;
+        private ModifierComponents.EstandarButton bttModify;
         private ModifierComponents.EstandarButton bttReturn;
-        private ModifierComponents.EstandarDataView estandarDataView1;
+        private ModifierComponents.EstandarDataView dtView;
+        private ModifierComponents.EstandarTextBox txtId;
     }
 }

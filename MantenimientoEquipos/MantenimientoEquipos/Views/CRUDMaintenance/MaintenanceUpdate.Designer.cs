@@ -31,18 +31,18 @@
             this.estandarTitleLabel1 = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
             this.estandarLabel1 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.estandarLabel2 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
+            this.txtUser = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
+            this.cmbDevice = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
             this.estandarLabel3 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.estandarLabel4 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
+            this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
             this.estandarLabel5 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.estandarLabel6 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
-            this.estadarComboBox1 = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
-            this.estadarComboBox2 = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
-            this.estandarTextBox1 = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
-            this.estandarTextBox2 = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
-            this.estadarComboBox3 = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
-            this.estadarComboBox4 = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
-            this.estandarButton1 = new MantenimientoEquipos.ModifierComponents.EstandarButton();
-            this.estandarButton2 = new MantenimientoEquipos.ModifierComponents.EstandarButton();
+            this.cmbType = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
+            this.cmbNature = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
+            this.bttAccept = new MantenimientoEquipos.ModifierComponents.EstandarButton();
+            this.bttCancel = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.SuspendLayout();
             // 
             // estandarTitleLabel1
@@ -50,7 +50,7 @@
             this.estandarTitleLabel1.AutoSize = true;
             this.estandarTitleLabel1.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estandarTitleLabel1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.estandarTitleLabel1.Location = new System.Drawing.Point(143, 0);
+            this.estandarTitleLabel1.Location = new System.Drawing.Point(19, 19);
             this.estandarTitleLabel1.Margin = new System.Windows.Forms.Padding(10);
             this.estandarTitleLabel1.Name = "estandarTitleLabel1";
             this.estandarTitleLabel1.Size = new System.Drawing.Size(533, 61);
@@ -62,178 +62,172 @@
             this.estandarLabel1.AutoSize = true;
             this.estandarLabel1.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estandarLabel1.ForeColor = System.Drawing.Color.Black;
-            this.estandarLabel1.Location = new System.Drawing.Point(149, 97);
+            this.estandarLabel1.Location = new System.Drawing.Point(31, 127);
             this.estandarLabel1.Margin = new System.Windows.Forms.Padding(10);
             this.estandarLabel1.Name = "estandarLabel1";
-            this.estandarLabel1.Size = new System.Drawing.Size(181, 27);
+            this.estandarLabel1.Size = new System.Drawing.Size(112, 27);
             this.estandarLabel1.TabIndex = 1;
-            this.estandarLabel1.Text = "Nombe del equipo";
+            this.estandarLabel1.Text = "Dispositivo";
             // 
             // estandarLabel2
             // 
             this.estandarLabel2.AutoSize = true;
             this.estandarLabel2.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estandarLabel2.ForeColor = System.Drawing.Color.Black;
-            this.estandarLabel2.Location = new System.Drawing.Point(149, 144);
+            this.estandarLabel2.Location = new System.Drawing.Point(286, 127);
             this.estandarLabel2.Margin = new System.Windows.Forms.Padding(10);
             this.estandarLabel2.Name = "estandarLabel2";
-            this.estandarLabel2.Size = new System.Drawing.Size(200, 27);
+            this.estandarLabel2.Size = new System.Drawing.Size(83, 27);
             this.estandarLabel2.TabIndex = 2;
-            this.estandarLabel2.Text = "Usuario responsable";
+            this.estandarLabel2.Text = "Usuario";
+            // 
+            // txtUser
+            // 
+            this.txtUser.BorderRadius = 20;
+            this.txtUser.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.Location = new System.Drawing.Point(291, 168);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(10);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(177, 32);
+            this.txtUser.TabIndex = 3;
+            // 
+            // cmbDevice
+            // 
+            this.cmbDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDevice.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDevice.FormattingEnabled = true;
+            this.cmbDevice.Location = new System.Drawing.Point(36, 168);
+            this.cmbDevice.Name = "cmbDevice";
+            this.cmbDevice.Size = new System.Drawing.Size(197, 32);
+            this.cmbDevice.TabIndex = 4;
             // 
             // estandarLabel3
             // 
             this.estandarLabel3.AutoSize = true;
             this.estandarLabel3.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estandarLabel3.ForeColor = System.Drawing.Color.Black;
-            this.estandarLabel3.Location = new System.Drawing.Point(149, 191);
+            this.estandarLabel3.Location = new System.Drawing.Point(31, 265);
             this.estandarLabel3.Margin = new System.Windows.Forms.Padding(10);
             this.estandarLabel3.Name = "estandarLabel3";
-            this.estandarLabel3.Size = new System.Drawing.Size(147, 27);
-            this.estandarLabel3.TabIndex = 3;
-            this.estandarLabel3.Text = "Fecha de Inicio";
+            this.estandarLabel3.Size = new System.Drawing.Size(119, 27);
+            this.estandarLabel3.TabIndex = 5;
+            this.estandarLabel3.Text = "Fecha Inicio";
             // 
             // estandarLabel4
             // 
             this.estandarLabel4.AutoSize = true;
             this.estandarLabel4.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estandarLabel4.ForeColor = System.Drawing.Color.Black;
-            this.estandarLabel4.Location = new System.Drawing.Point(149, 238);
+            this.estandarLabel4.Location = new System.Drawing.Point(286, 265);
             this.estandarLabel4.Margin = new System.Windows.Forms.Padding(10);
             this.estandarLabel4.Name = "estandarLabel4";
-            this.estandarLabel4.Size = new System.Drawing.Size(125, 27);
-            this.estandarLabel4.TabIndex = 4;
-            this.estandarLabel4.Text = "Fecha de Fin";
+            this.estandarLabel4.Size = new System.Drawing.Size(97, 27);
+            this.estandarLabel4.TabIndex = 6;
+            this.estandarLabel4.Text = "Fecha Fin";
+            // 
+            // dtpStartDate
+            // 
+            this.dtpStartDate.Location = new System.Drawing.Point(36, 306);
+            this.dtpStartDate.Name = "dtpStartDate";
+            this.dtpStartDate.Size = new System.Drawing.Size(200, 22);
+            this.dtpStartDate.TabIndex = 7;
+            // 
+            // dtpEndDate
+            // 
+            this.dtpEndDate.Location = new System.Drawing.Point(291, 305);
+            this.dtpEndDate.Name = "dtpEndDate";
+            this.dtpEndDate.Size = new System.Drawing.Size(200, 22);
+            this.dtpEndDate.TabIndex = 8;
             // 
             // estandarLabel5
             // 
             this.estandarLabel5.AutoSize = true;
             this.estandarLabel5.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estandarLabel5.ForeColor = System.Drawing.Color.Black;
-            this.estandarLabel5.Location = new System.Drawing.Point(149, 285);
+            this.estandarLabel5.Location = new System.Drawing.Point(31, 376);
             this.estandarLabel5.Margin = new System.Windows.Forms.Padding(10);
             this.estandarLabel5.Name = "estandarLabel5";
-            this.estandarLabel5.Size = new System.Drawing.Size(226, 27);
-            this.estandarLabel5.TabIndex = 5;
-            this.estandarLabel5.Text = "Tipo de mantenimiento";
+            this.estandarLabel5.Size = new System.Drawing.Size(52, 27);
+            this.estandarLabel5.TabIndex = 9;
+            this.estandarLabel5.Text = "Tipo";
             // 
             // estandarLabel6
             // 
             this.estandarLabel6.AutoSize = true;
             this.estandarLabel6.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estandarLabel6.ForeColor = System.Drawing.Color.Black;
-            this.estandarLabel6.Location = new System.Drawing.Point(149, 332);
+            this.estandarLabel6.Location = new System.Drawing.Point(286, 376);
             this.estandarLabel6.Margin = new System.Windows.Forms.Padding(10);
             this.estandarLabel6.Name = "estandarLabel6";
             this.estandarLabel6.Size = new System.Drawing.Size(111, 27);
-            this.estandarLabel6.TabIndex = 6;
+            this.estandarLabel6.TabIndex = 10;
             this.estandarLabel6.Text = "Naturaleza";
             // 
-            // estadarComboBox1
+            // cmbType
             // 
-            this.estadarComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.estadarComboBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estadarComboBox1.FormattingEnabled = true;
-            this.estadarComboBox1.Location = new System.Drawing.Point(526, 97);
-            this.estadarComboBox1.Name = "estadarComboBox1";
-            this.estadarComboBox1.Size = new System.Drawing.Size(121, 32);
-            this.estadarComboBox1.TabIndex = 7;
+            this.cmbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbType.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbType.FormattingEnabled = true;
+            this.cmbType.Location = new System.Drawing.Point(36, 416);
+            this.cmbType.Name = "cmbType";
+            this.cmbType.Size = new System.Drawing.Size(191, 32);
+            this.cmbType.TabIndex = 11;
             // 
-            // estadarComboBox2
+            // cmbNature
             // 
-            this.estadarComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.estadarComboBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estadarComboBox2.FormattingEnabled = true;
-            this.estadarComboBox2.Location = new System.Drawing.Point(526, 144);
-            this.estadarComboBox2.Name = "estadarComboBox2";
-            this.estadarComboBox2.Size = new System.Drawing.Size(121, 32);
-            this.estadarComboBox2.TabIndex = 8;
+            this.cmbNature.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNature.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbNature.FormattingEnabled = true;
+            this.cmbNature.Location = new System.Drawing.Point(291, 416);
+            this.cmbNature.Name = "cmbNature";
+            this.cmbNature.Size = new System.Drawing.Size(167, 32);
+            this.cmbNature.TabIndex = 12;
             // 
-            // estandarTextBox1
+            // bttAccept
             // 
-            this.estandarTextBox1.BorderRadius = 20;
-            this.estandarTextBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estandarTextBox1.Location = new System.Drawing.Point(526, 191);
-            this.estandarTextBox1.Margin = new System.Windows.Forms.Padding(10);
-            this.estandarTextBox1.Name = "estandarTextBox1";
-            this.estandarTextBox1.Size = new System.Drawing.Size(100, 32);
-            this.estandarTextBox1.TabIndex = 9;
+            this.bttAccept.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttAccept.BorderRadius = 20;
+            this.bttAccept.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttAccept.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttAccept.ForeColor = System.Drawing.Color.White;
+            this.bttAccept.Location = new System.Drawing.Point(275, 523);
+            this.bttAccept.Name = "bttAccept";
+            this.bttAccept.Size = new System.Drawing.Size(156, 43);
+            this.bttAccept.TabIndex = 13;
+            this.bttAccept.Text = "Aceptar";
+            this.bttAccept.UseVisualStyleBackColor = false;
             // 
-            // estandarTextBox2
+            // bttCancel
             // 
-            this.estandarTextBox2.BorderRadius = 20;
-            this.estandarTextBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estandarTextBox2.Location = new System.Drawing.Point(526, 238);
-            this.estandarTextBox2.Margin = new System.Windows.Forms.Padding(10);
-            this.estandarTextBox2.Name = "estandarTextBox2";
-            this.estandarTextBox2.Size = new System.Drawing.Size(100, 32);
-            this.estandarTextBox2.TabIndex = 10;
-            // 
-            // estadarComboBox3
-            // 
-            this.estadarComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.estadarComboBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estadarComboBox3.FormattingEnabled = true;
-            this.estadarComboBox3.Location = new System.Drawing.Point(526, 285);
-            this.estadarComboBox3.Name = "estadarComboBox3";
-            this.estadarComboBox3.Size = new System.Drawing.Size(121, 32);
-            this.estadarComboBox3.TabIndex = 11;
-            // 
-            // estadarComboBox4
-            // 
-            this.estadarComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.estadarComboBox4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estadarComboBox4.FormattingEnabled = true;
-            this.estadarComboBox4.Location = new System.Drawing.Point(526, 332);
-            this.estadarComboBox4.Name = "estadarComboBox4";
-            this.estadarComboBox4.Size = new System.Drawing.Size(121, 32);
-            this.estadarComboBox4.TabIndex = 12;
-            // 
-            // estandarButton1
-            // 
-            this.estandarButton1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.estandarButton1.BorderRadius = 20;
-            this.estandarButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.estandarButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estandarButton1.ForeColor = System.Drawing.Color.White;
-            this.estandarButton1.Location = new System.Drawing.Point(526, 394);
-            this.estandarButton1.Name = "estandarButton1";
-            this.estandarButton1.Size = new System.Drawing.Size(121, 35);
-            this.estandarButton1.TabIndex = 13;
-            this.estandarButton1.Text = "Actualizar";
-            this.estandarButton1.UseVisualStyleBackColor = false;
-            // 
-            // estandarButton2
-            // 
-            this.estandarButton2.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.estandarButton2.BorderRadius = 20;
-            this.estandarButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.estandarButton2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estandarButton2.ForeColor = System.Drawing.Color.White;
-            this.estandarButton2.Location = new System.Drawing.Point(679, 394);
-            this.estandarButton2.Name = "estandarButton2";
-            this.estandarButton2.Size = new System.Drawing.Size(97, 35);
-            this.estandarButton2.TabIndex = 14;
-            this.estandarButton2.Text = "Cancelar";
-            this.estandarButton2.UseVisualStyleBackColor = false;
+            this.bttCancel.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttCancel.BorderRadius = 20;
+            this.bttCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttCancel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttCancel.ForeColor = System.Drawing.Color.White;
+            this.bttCancel.Location = new System.Drawing.Point(100, 523);
+            this.bttCancel.Name = "bttCancel";
+            this.bttCancel.Size = new System.Drawing.Size(156, 43);
+            this.bttCancel.TabIndex = 14;
+            this.bttCancel.Text = "Cancelar";
+            this.bttCancel.UseVisualStyleBackColor = false;
             // 
             // MaintenanceUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.estandarButton2);
-            this.Controls.Add(this.estandarButton1);
-            this.Controls.Add(this.estadarComboBox4);
-            this.Controls.Add(this.estadarComboBox3);
-            this.Controls.Add(this.estandarTextBox2);
-            this.Controls.Add(this.estandarTextBox1);
-            this.Controls.Add(this.estadarComboBox2);
-            this.Controls.Add(this.estadarComboBox1);
+            this.ClientSize = new System.Drawing.Size(578, 624);
+            this.Controls.Add(this.bttCancel);
+            this.Controls.Add(this.bttAccept);
+            this.Controls.Add(this.cmbNature);
+            this.Controls.Add(this.cmbType);
             this.Controls.Add(this.estandarLabel6);
             this.Controls.Add(this.estandarLabel5);
+            this.Controls.Add(this.dtpEndDate);
+            this.Controls.Add(this.dtpStartDate);
             this.Controls.Add(this.estandarLabel4);
             this.Controls.Add(this.estandarLabel3);
+            this.Controls.Add(this.cmbDevice);
+            this.Controls.Add(this.txtUser);
             this.Controls.Add(this.estandarLabel2);
             this.Controls.Add(this.estandarLabel1);
             this.Controls.Add(this.estandarTitleLabel1);
@@ -249,17 +243,17 @@
         private ModifierComponents.EstandarTitleLabel estandarTitleLabel1;
         private ModifierComponents.EstandarLabel estandarLabel1;
         private ModifierComponents.EstandarLabel estandarLabel2;
+        private ModifierComponents.EstandarTextBox txtUser;
+        private ModifierComponents.EstadarComboBox cmbDevice;
         private ModifierComponents.EstandarLabel estandarLabel3;
         private ModifierComponents.EstandarLabel estandarLabel4;
+        private System.Windows.Forms.DateTimePicker dtpStartDate;
+        private System.Windows.Forms.DateTimePicker dtpEndDate;
         private ModifierComponents.EstandarLabel estandarLabel5;
         private ModifierComponents.EstandarLabel estandarLabel6;
-        private ModifierComponents.EstadarComboBox estadarComboBox1;
-        private ModifierComponents.EstadarComboBox estadarComboBox2;
-        private ModifierComponents.EstandarTextBox estandarTextBox1;
-        private ModifierComponents.EstandarTextBox estandarTextBox2;
-        private ModifierComponents.EstadarComboBox estadarComboBox3;
-        private ModifierComponents.EstadarComboBox estadarComboBox4;
-        private ModifierComponents.EstandarButton estandarButton1;
-        private ModifierComponents.EstandarButton estandarButton2;
+        private ModifierComponents.EstadarComboBox cmbType;
+        private ModifierComponents.EstadarComboBox cmbNature;
+        private ModifierComponents.EstandarButton bttAccept;
+        private ModifierComponents.EstandarButton bttCancel;
     }
 }

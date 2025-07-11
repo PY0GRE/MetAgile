@@ -47,11 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBaseConnection.cs" />
-    <Compile Include="MetAgileDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="MetAgileDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -116,12 +111,6 @@
     </Compile>
     <Compile Include="Views\CRUDDevices\UpdateDevicesView.Designer.cs">
       <DependentUpon>UpdateDevicesView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\CRUDMaintenance\MaintenanceAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\CRUDMaintenance\MaintenanceAdd.Designer.cs">
-      <DependentUpon>MaintenanceAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\CRUDMaintenance\MaintenanceUpdate.cs">
       <SubType>Form</SubType>
@@ -210,6 +199,12 @@
     <EmbeddedResource Include="Views\CRUDDevices\MenuDevicesView.resx">
       <DependentUpon>MenuDevicesView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDMaintenance\MaintenanceUpdate.resx">
+      <DependentUpon>MaintenanceUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDMaintenance\MaintenanceView.resx">
+      <DependentUpon>MaintenanceView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CRUDMaintenance\MenuMaintenance.resx">
       <DependentUpon>MenuMaintenance.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,17 +226,6 @@
     <EmbeddedResource Include="Views\CRUDUsers\Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="MetAgileDataSet.xsc">
-      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="MetAgileDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MetAgileDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="MetAgileDataSet.xss">
-      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
-    </None>
     <None Include="MetAgileDataSet1.xsc">
       <DependentUpon>MetAgileDataSet1.xsd</DependentUpon>
     </None>

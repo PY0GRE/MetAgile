@@ -28,19 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.estandarTitleLabel1 = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
-            this.estandarDataView1 = new MantenimientoEquipos.ModifierComponents.EstandarDataView();
-            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnFechaInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnFechaFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTipoMant = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNaturalezaMant = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estandarButton1 = new MantenimientoEquipos.ModifierComponents.EstandarButton();
-            ((System.ComponentModel.ISupportInitialize)(this.estandarDataView1)).BeginInit();
+            this.estandarLabel1 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
+            this.estandarLabel2 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
+            this.estandarLabel3 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
+            this.estandarLabel4 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
+            this.estandarLabel5 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
+            this.estandarLabel6 = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
+            this.txtUser = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
+            this.cmbType = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
+            this.cmbNature = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
+            this.bttCancel = new MantenimientoEquipos.ModifierComponents.EstandarButton();
+            this.bttAccept = new MantenimientoEquipos.ModifierComponents.EstandarButton();
+            this.cmbDevice = new MantenimientoEquipos.ModifierComponents.EstadarComboBox();
+            this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // estandarTitleLabel1
@@ -48,118 +50,190 @@
             this.estandarTitleLabel1.AutoSize = true;
             this.estandarTitleLabel1.Font = new System.Drawing.Font("Calibri", 25F, System.Drawing.FontStyle.Bold);
             this.estandarTitleLabel1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.estandarTitleLabel1.Location = new System.Drawing.Point(178, 19);
+            this.estandarTitleLabel1.Location = new System.Drawing.Point(46, 19);
             this.estandarTitleLabel1.Margin = new System.Windows.Forms.Padding(10);
             this.estandarTitleLabel1.Name = "estandarTitleLabel1";
-            this.estandarTitleLabel1.Size = new System.Drawing.Size(409, 51);
+            this.estandarTitleLabel1.Size = new System.Drawing.Size(457, 51);
             this.estandarTitleLabel1.TabIndex = 0;
-            this.estandarTitleLabel1.Text = "Vista mantenimientos";
+            this.estandarTitleLabel1.Text = "Creación mantenimiento";
+            this.estandarTitleLabel1.Click += new System.EventHandler(this.estandarTitleLabel1_Click);
             // 
-            // estandarDataView1
+            // estandarLabel1
             // 
-            this.estandarDataView1.AllowUserToAddRows = false;
-            this.estandarDataView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.estandarDataView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.estandarDataView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.estandarDataView1.BackgroundColor = System.Drawing.Color.White;
-            this.estandarDataView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.estandarDataView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.estandarDataView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.estandarDataView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.estandarDataView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnNombre,
-            this.ColumnUsuario,
-            this.ColumnFechaInicio,
-            this.ColumnFechaFin,
-            this.ColumnTipoMant,
-            this.ColumnNaturalezaMant});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 10F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.estandarDataView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.estandarDataView1.EnableHeadersVisualStyles = false;
-            this.estandarDataView1.GridColor = System.Drawing.Color.LightGray;
-            this.estandarDataView1.Location = new System.Drawing.Point(29, 105);
-            this.estandarDataView1.Name = "estandarDataView1";
-            this.estandarDataView1.RowHeadersVisible = false;
-            this.estandarDataView1.RowHeadersWidth = 51;
-            this.estandarDataView1.RowTemplate.Height = 24;
-            this.estandarDataView1.Size = new System.Drawing.Size(736, 272);
-            this.estandarDataView1.TabIndex = 1;
+            this.estandarLabel1.AutoSize = true;
+            this.estandarLabel1.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estandarLabel1.ForeColor = System.Drawing.Color.Black;
+            this.estandarLabel1.Location = new System.Drawing.Point(31, 127);
+            this.estandarLabel1.Margin = new System.Windows.Forms.Padding(10);
+            this.estandarLabel1.Name = "estandarLabel1";
+            this.estandarLabel1.Size = new System.Drawing.Size(112, 27);
+            this.estandarLabel1.TabIndex = 3;
+            this.estandarLabel1.Text = "Dispositivo";
             // 
-            // ColumnNombre
+            // estandarLabel2
             // 
-            this.ColumnNombre.HeaderText = "Nombre";
-            this.ColumnNombre.MinimumWidth = 6;
-            this.ColumnNombre.Name = "ColumnNombre";
+            this.estandarLabel2.AutoSize = true;
+            this.estandarLabel2.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estandarLabel2.ForeColor = System.Drawing.Color.Black;
+            this.estandarLabel2.Location = new System.Drawing.Point(286, 127);
+            this.estandarLabel2.Margin = new System.Windows.Forms.Padding(10);
+            this.estandarLabel2.Name = "estandarLabel2";
+            this.estandarLabel2.Size = new System.Drawing.Size(83, 27);
+            this.estandarLabel2.TabIndex = 4;
+            this.estandarLabel2.Text = "Usuario";
             // 
-            // ColumnUsuario
+            // estandarLabel3
             // 
-            this.ColumnUsuario.HeaderText = "Usuario";
-            this.ColumnUsuario.MinimumWidth = 6;
-            this.ColumnUsuario.Name = "ColumnUsuario";
+            this.estandarLabel3.AutoSize = true;
+            this.estandarLabel3.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estandarLabel3.ForeColor = System.Drawing.Color.Black;
+            this.estandarLabel3.Location = new System.Drawing.Point(31, 256);
+            this.estandarLabel3.Margin = new System.Windows.Forms.Padding(10);
+            this.estandarLabel3.Name = "estandarLabel3";
+            this.estandarLabel3.Size = new System.Drawing.Size(119, 27);
+            this.estandarLabel3.TabIndex = 5;
+            this.estandarLabel3.Text = "Fecha Inicio";
             // 
-            // ColumnFechaInicio
+            // estandarLabel4
             // 
-            this.ColumnFechaInicio.HeaderText = "Fecha Inicio";
-            this.ColumnFechaInicio.MinimumWidth = 6;
-            this.ColumnFechaInicio.Name = "ColumnFechaInicio";
+            this.estandarLabel4.AutoSize = true;
+            this.estandarLabel4.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estandarLabel4.ForeColor = System.Drawing.Color.Black;
+            this.estandarLabel4.Location = new System.Drawing.Point(286, 256);
+            this.estandarLabel4.Margin = new System.Windows.Forms.Padding(10);
+            this.estandarLabel4.Name = "estandarLabel4";
+            this.estandarLabel4.Size = new System.Drawing.Size(97, 27);
+            this.estandarLabel4.TabIndex = 6;
+            this.estandarLabel4.Text = "Fecha Fin";
             // 
-            // ColumnFechaFin
+            // estandarLabel5
             // 
-            this.ColumnFechaFin.HeaderText = "Fecha Fin";
-            this.ColumnFechaFin.MinimumWidth = 6;
-            this.ColumnFechaFin.Name = "ColumnFechaFin";
+            this.estandarLabel5.AutoSize = true;
+            this.estandarLabel5.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estandarLabel5.ForeColor = System.Drawing.Color.Black;
+            this.estandarLabel5.Location = new System.Drawing.Point(31, 371);
+            this.estandarLabel5.Margin = new System.Windows.Forms.Padding(10);
+            this.estandarLabel5.Name = "estandarLabel5";
+            this.estandarLabel5.Size = new System.Drawing.Size(52, 27);
+            this.estandarLabel5.TabIndex = 7;
+            this.estandarLabel5.Text = "Tipo";
             // 
-            // ColumnTipoMant
+            // estandarLabel6
             // 
-            this.ColumnTipoMant.HeaderText = "Tipo";
-            this.ColumnTipoMant.MinimumWidth = 6;
-            this.ColumnTipoMant.Name = "ColumnTipoMant";
+            this.estandarLabel6.AutoSize = true;
+            this.estandarLabel6.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estandarLabel6.ForeColor = System.Drawing.Color.Black;
+            this.estandarLabel6.Location = new System.Drawing.Point(286, 371);
+            this.estandarLabel6.Margin = new System.Windows.Forms.Padding(10);
+            this.estandarLabel6.Name = "estandarLabel6";
+            this.estandarLabel6.Size = new System.Drawing.Size(111, 27);
+            this.estandarLabel6.TabIndex = 8;
+            this.estandarLabel6.Text = "Naturaleza";
             // 
-            // ColumnNaturalezaMant
+            // txtUser
             // 
-            this.ColumnNaturalezaMant.HeaderText = "Naturaleza";
-            this.ColumnNaturalezaMant.MinimumWidth = 6;
-            this.ColumnNaturalezaMant.Name = "ColumnNaturalezaMant";
+            this.txtUser.BorderRadius = 20;
+            this.txtUser.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.Location = new System.Drawing.Point(291, 168);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(10);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(199, 32);
+            this.txtUser.TabIndex = 10;
             // 
-            // estandarButton1
+            // cmbType
             // 
-            this.estandarButton1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.estandarButton1.BorderRadius = 20;
-            this.estandarButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.estandarButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estandarButton1.ForeColor = System.Drawing.Color.White;
-            this.estandarButton1.Location = new System.Drawing.Point(641, 394);
-            this.estandarButton1.Name = "estandarButton1";
-            this.estandarButton1.Size = new System.Drawing.Size(96, 35);
-            this.estandarButton1.TabIndex = 2;
-            this.estandarButton1.Text = "Regresar";
-            this.estandarButton1.UseVisualStyleBackColor = false;
+            this.cmbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbType.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbType.FormattingEnabled = true;
+            this.cmbType.Location = new System.Drawing.Point(36, 411);
+            this.cmbType.Name = "cmbType";
+            this.cmbType.Size = new System.Drawing.Size(215, 32);
+            this.cmbType.TabIndex = 13;
+            // 
+            // cmbNature
+            // 
+            this.cmbNature.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNature.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbNature.FormattingEnabled = true;
+            this.cmbNature.Location = new System.Drawing.Point(291, 411);
+            this.cmbNature.Name = "cmbNature";
+            this.cmbNature.Size = new System.Drawing.Size(199, 32);
+            this.cmbNature.TabIndex = 14;
+            // 
+            // bttCancel
+            // 
+            this.bttCancel.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttCancel.BorderRadius = 20;
+            this.bttCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttCancel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttCancel.ForeColor = System.Drawing.Color.White;
+            this.bttCancel.Location = new System.Drawing.Point(95, 528);
+            this.bttCancel.Name = "bttCancel";
+            this.bttCancel.Size = new System.Drawing.Size(156, 43);
+            this.bttCancel.TabIndex = 15;
+            this.bttCancel.Text = "Cancelar";
+            this.bttCancel.UseVisualStyleBackColor = false;
+            // 
+            // bttAccept
+            // 
+            this.bttAccept.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttAccept.BorderRadius = 20;
+            this.bttAccept.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttAccept.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttAccept.ForeColor = System.Drawing.Color.White;
+            this.bttAccept.Location = new System.Drawing.Point(273, 528);
+            this.bttAccept.Name = "bttAccept";
+            this.bttAccept.Size = new System.Drawing.Size(156, 43);
+            this.bttAccept.TabIndex = 16;
+            this.bttAccept.Text = "Aceptar";
+            this.bttAccept.UseVisualStyleBackColor = false;
+            // 
+            // cmbDevice
+            // 
+            this.cmbDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDevice.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDevice.FormattingEnabled = true;
+            this.cmbDevice.Location = new System.Drawing.Point(36, 168);
+            this.cmbDevice.Name = "cmbDevice";
+            this.cmbDevice.Size = new System.Drawing.Size(215, 32);
+            this.cmbDevice.TabIndex = 17;
+            // 
+            // dtpStartDate
+            // 
+            this.dtpStartDate.Location = new System.Drawing.Point(36, 296);
+            this.dtpStartDate.Name = "dtpStartDate";
+            this.dtpStartDate.Size = new System.Drawing.Size(200, 22);
+            this.dtpStartDate.TabIndex = 18;
+            // 
+            // dtpEndDate
+            // 
+            this.dtpEndDate.Location = new System.Drawing.Point(291, 297);
+            this.dtpEndDate.Name = "dtpEndDate";
+            this.dtpEndDate.Size = new System.Drawing.Size(200, 22);
+            this.dtpEndDate.TabIndex = 19;
             // 
             // MaintenanceView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.estandarButton1);
-            this.Controls.Add(this.estandarDataView1);
+            this.ClientSize = new System.Drawing.Size(582, 736);
+            this.Controls.Add(this.dtpEndDate);
+            this.Controls.Add(this.dtpStartDate);
+            this.Controls.Add(this.cmbDevice);
+            this.Controls.Add(this.bttAccept);
+            this.Controls.Add(this.bttCancel);
+            this.Controls.Add(this.cmbNature);
+            this.Controls.Add(this.cmbType);
+            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.estandarLabel6);
+            this.Controls.Add(this.estandarLabel5);
+            this.Controls.Add(this.estandarLabel4);
+            this.Controls.Add(this.estandarLabel3);
+            this.Controls.Add(this.estandarLabel2);
+            this.Controls.Add(this.estandarLabel1);
             this.Controls.Add(this.estandarTitleLabel1);
             this.Name = "MaintenanceView";
             this.Text = "MaintenanceView";
-            ((System.ComponentModel.ISupportInitialize)(this.estandarDataView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,13 +242,19 @@
         #endregion
 
         private ModifierComponents.EstandarTitleLabel estandarTitleLabel1;
-        private ModifierComponents.EstandarDataView estandarDataView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnUsuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFechaInicio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFechaFin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTipoMant;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNaturalezaMant;
-        private ModifierComponents.EstandarButton estandarButton1;
+        private ModifierComponents.EstandarLabel estandarLabel1;
+        private ModifierComponents.EstandarLabel estandarLabel2;
+        private ModifierComponents.EstandarLabel estandarLabel3;
+        private ModifierComponents.EstandarLabel estandarLabel4;
+        private ModifierComponents.EstandarLabel estandarLabel5;
+        private ModifierComponents.EstandarLabel estandarLabel6;
+        private ModifierComponents.EstandarTextBox txtUser;
+        private ModifierComponents.EstadarComboBox cmbType;
+        private ModifierComponents.EstadarComboBox cmbNature;
+        private ModifierComponents.EstandarButton bttCancel;
+        private ModifierComponents.EstandarButton bttAccept;
+        private ModifierComponents.EstadarComboBox cmbDevice;
+        private System.Windows.Forms.DateTimePicker dtpStartDate;
+        private System.Windows.Forms.DateTimePicker dtpEndDate;
     }
 }
