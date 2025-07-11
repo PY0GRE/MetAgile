@@ -46,21 +46,14 @@ namespace MantenimientoEquipos {
         
         private UserStatusDataTable tableUserStatus;
         
-        private global::System.Data.DataRelation relationFK__Devices__idBrand__5DCAEF64;
+        private global::System.Data.DataRelation relationFK__Devices__idBrand__4BAC3F29;
         
-        private global::System.Data.DataRelation relationFK__Devices__idDevic__5CD6CB2B;
         
-        private global::System.Data.DataRelation relationFK__Devices__idStatu__5EBF139D;
         
-        private global::System.Data.DataRelation relationFK__Manteinan__idMan__619B8048;
         
-        private global::System.Data.DataRelation relationFK__Manteinan__idMan__628FA481;
         
-        private global::System.Data.DataRelation relationFK__Manteinan__idUse__6383C8BA;
         
-        private global::System.Data.DataRelation relationFK__Users__idRole__59063A47;
         
-        private global::System.Data.DataRelation relationFK__Users__idStatus__59FA5E80;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -450,14 +443,6 @@ namespace MantenimientoEquipos {
                     this.tableUserStatus.InitVars();
                 }
             }
-            this.relationFK__Devices__idBrand__5DCAEF64 = this.Relations["FK__Devices__idBrand__5DCAEF64"];
-            this.relationFK__Devices__idDevic__5CD6CB2B = this.Relations["FK__Devices__idDevic__5CD6CB2B"];
-            this.relationFK__Devices__idStatu__5EBF139D = this.Relations["FK__Devices__idStatu__5EBF139D"];
-            this.relationFK__Manteinan__idMan__619B8048 = this.Relations["FK__Manteinan__idMan__619B8048"];
-            this.relationFK__Manteinan__idMan__628FA481 = this.Relations["FK__Manteinan__idMan__628FA481"];
-            this.relationFK__Manteinan__idUse__6383C8BA = this.Relations["FK__Manteinan__idUse__6383C8BA"];
-            this.relationFK__Users__idRole__59063A47 = this.Relations["FK__Users__idRole__59063A47"];
-            this.relationFK__Users__idStatus__59FA5E80 = this.Relations["FK__Users__idStatus__59FA5E80"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -490,38 +475,22 @@ namespace MantenimientoEquipos {
             base.Tables.Add(this.tableUsers);
             this.tableUserStatus = new UserStatusDataTable();
             base.Tables.Add(this.tableUserStatus);
-            this.relationFK__Devices__idBrand__5DCAEF64 = new global::System.Data.DataRelation("FK__Devices__idBrand__5DCAEF64", new global::System.Data.DataColumn[] {
                         this.tableBrands.idBrandColumn}, new global::System.Data.DataColumn[] {
                         this.tableDevices.idBrandColumn}, false);
-            this.Relations.Add(this.relationFK__Devices__idBrand__5DCAEF64);
-            this.relationFK__Devices__idDevic__5CD6CB2B = new global::System.Data.DataRelation("FK__Devices__idDevic__5CD6CB2B", new global::System.Data.DataColumn[] {
                         this.tableDeviceTypes.idDeviceTypeColumn}, new global::System.Data.DataColumn[] {
                         this.tableDevices.idDeviceTypeColumn}, false);
-            this.Relations.Add(this.relationFK__Devices__idDevic__5CD6CB2B);
-            this.relationFK__Devices__idStatu__5EBF139D = new global::System.Data.DataRelation("FK__Devices__idStatu__5EBF139D", new global::System.Data.DataColumn[] {
                         this.tableDeviceStatus.idDeviceStatusColumn}, new global::System.Data.DataColumn[] {
                         this.tableDevices.idStatusColumn}, false);
-            this.Relations.Add(this.relationFK__Devices__idStatu__5EBF139D);
-            this.relationFK__Manteinan__idMan__619B8048 = new global::System.Data.DataRelation("FK__Manteinan__idMan__619B8048", new global::System.Data.DataColumn[] {
                         this.tableManteinanceTypes.idManteinanceTypeColumn}, new global::System.Data.DataColumn[] {
                         this.tableManteinances.idManTypeColumn}, false);
-            this.Relations.Add(this.relationFK__Manteinan__idMan__619B8048);
-            this.relationFK__Manteinan__idMan__628FA481 = new global::System.Data.DataRelation("FK__Manteinan__idMan__628FA481", new global::System.Data.DataColumn[] {
                         this.tableManteinanceNatures.idManteinanceNatureColumn}, new global::System.Data.DataColumn[] {
                         this.tableManteinances.idManNatColumn}, false);
-            this.Relations.Add(this.relationFK__Manteinan__idMan__628FA481);
-            this.relationFK__Manteinan__idUse__6383C8BA = new global::System.Data.DataRelation("FK__Manteinan__idUse__6383C8BA", new global::System.Data.DataColumn[] {
                         this.tableUsers.idUserColumn}, new global::System.Data.DataColumn[] {
                         this.tableManteinances.idUserColumn}, false);
-            this.Relations.Add(this.relationFK__Manteinan__idUse__6383C8BA);
-            this.relationFK__Users__idRole__59063A47 = new global::System.Data.DataRelation("FK__Users__idRole__59063A47", new global::System.Data.DataColumn[] {
                         this.tableRoles.idRoleColumn}, new global::System.Data.DataColumn[] {
                         this.tableUsers.idRoleColumn}, false);
-            this.Relations.Add(this.relationFK__Users__idRole__59063A47);
-            this.relationFK__Users__idStatus__59FA5E80 = new global::System.Data.DataRelation("FK__Users__idStatus__59FA5E80", new global::System.Data.DataColumn[] {
                         this.tableUserStatus.idUserStatusColumn}, new global::System.Data.DataColumn[] {
                         this.tableUsers.idStatusColumn}, false);
-            this.Relations.Add(this.relationFK__Users__idStatus__59FA5E80);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1384,7 +1353,6 @@ namespace MantenimientoEquipos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DevicesRow AddDevicesRow(string serialNumber, string model, DeviceTypesRow parentDeviceTypesRowByFK__Devices__idDevic__5CD6CB2B, BrandsRow parentBrandsRowByFK__Devices__idBrand__5DCAEF64, DeviceStatusRow parentDeviceStatusRowByFK__Devices__idStatu__5EBF139D) {
                 DevicesRow rowDevicesRow = ((DevicesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1393,14 +1361,8 @@ namespace MantenimientoEquipos {
                         null,
                         null,
                         null};
-                if ((parentDeviceTypesRowByFK__Devices__idDevic__5CD6CB2B != null)) {
-                    columnValuesArray[3] = parentDeviceTypesRowByFK__Devices__idDevic__5CD6CB2B[0];
                 }
-                if ((parentBrandsRowByFK__Devices__idBrand__5DCAEF64 != null)) {
-                    columnValuesArray[4] = parentBrandsRowByFK__Devices__idBrand__5DCAEF64[0];
                 }
-                if ((parentDeviceStatusRowByFK__Devices__idStatu__5EBF139D != null)) {
-                    columnValuesArray[5] = parentDeviceStatusRowByFK__Devices__idStatu__5EBF139D[0];
                 }
                 rowDevicesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDevicesRow);
@@ -2568,7 +2530,6 @@ namespace MantenimientoEquipos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ManteinancesRow AddManteinancesRow(System.DateTime startDate, System.DateTime lastDate, ManteinanceTypesRow parentManteinanceTypesRowByFK__Manteinan__idMan__619B8048, ManteinanceNaturesRow parentManteinanceNaturesRowByFK__Manteinan__idMan__628FA481, UsersRow parentUsersRowByFK__Manteinan__idUse__6383C8BA, string description) {
                 ManteinancesRow rowManteinancesRow = ((ManteinancesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2578,14 +2539,8 @@ namespace MantenimientoEquipos {
                         null,
                         null,
                         description};
-                if ((parentManteinanceTypesRowByFK__Manteinan__idMan__619B8048 != null)) {
-                    columnValuesArray[3] = parentManteinanceTypesRowByFK__Manteinan__idMan__619B8048[0];
                 }
-                if ((parentManteinanceNaturesRowByFK__Manteinan__idMan__628FA481 != null)) {
-                    columnValuesArray[4] = parentManteinanceNaturesRowByFK__Manteinan__idMan__628FA481[0];
                 }
-                if ((parentUsersRowByFK__Manteinan__idUse__6383C8BA != null)) {
-                    columnValuesArray[5] = parentUsersRowByFK__Manteinan__idUse__6383C8BA[0];
                 }
                 rowManteinancesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowManteinancesRow);
@@ -3483,7 +3438,6 @@ namespace MantenimientoEquipos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsersRow AddUsersRow(string name, string email, RolesRow parentRolesRowByFK__Users__idRole__59063A47, string password, UserStatusRow parentUserStatusRowByFK__Users__idStatus__59FA5E80) {
                 UsersRow rowUsersRow = ((UsersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -3492,11 +3446,7 @@ namespace MantenimientoEquipos {
                         null,
                         password,
                         null};
-                if ((parentRolesRowByFK__Users__idRole__59063A47 != null)) {
-                    columnValuesArray[3] = parentRolesRowByFK__Users__idRole__59063A47[0];
                 }
-                if ((parentUserStatusRowByFK__Users__idStatus__59FA5E80 != null)) {
-                    columnValuesArray[5] = parentUserStatusRowByFK__Users__idStatus__59FA5E80[0];
                 }
                 rowUsersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowUsersRow);
@@ -4102,11 +4052,9 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DevicesRow[] GetDevicesRows() {
-                if ((this.Table.ChildRelations["FK__Devices__idBrand__5DCAEF64"] == null)) {
                     return new DevicesRow[0];
                 }
                 else {
-                    return ((DevicesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devices__idBrand__5DCAEF64"])));
                 }
             }
         }
@@ -4220,10 +4168,8 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public BrandsRow BrandsRow {
                 get {
-                    return ((BrandsRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devices__idBrand__5DCAEF64"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devices__idBrand__5DCAEF64"]);
                 }
             }
             
@@ -4231,10 +4177,8 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DeviceTypesRow DeviceTypesRow {
                 get {
-                    return ((DeviceTypesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devices__idDevic__5CD6CB2B"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devices__idDevic__5CD6CB2B"]);
                 }
             }
             
@@ -4242,10 +4186,8 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DeviceStatusRow DeviceStatusRow {
                 get {
-                    return ((DeviceStatusRow)(this.GetParentRow(this.Table.ParentRelations["FK__Devices__idStatu__5EBF139D"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Devices__idStatu__5EBF139D"]);
                 }
             }
             
@@ -4366,11 +4308,9 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DevicesRow[] GetDevicesRows() {
-                if ((this.Table.ChildRelations["FK__Devices__idStatu__5EBF139D"] == null)) {
                     return new DevicesRow[0];
                 }
                 else {
-                    return ((DevicesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devices__idStatu__5EBF139D"])));
                 }
             }
         }
@@ -4431,11 +4371,9 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DevicesRow[] GetDevicesRows() {
-                if ((this.Table.ChildRelations["FK__Devices__idDevic__5CD6CB2B"] == null)) {
                     return new DevicesRow[0];
                 }
                 else {
-                    return ((DevicesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Devices__idDevic__5CD6CB2B"])));
                 }
             }
         }
@@ -4496,11 +4434,9 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ManteinancesRow[] GetManteinancesRows() {
-                if ((this.Table.ChildRelations["FK__Manteinan__idMan__628FA481"] == null)) {
                     return new ManteinancesRow[0];
                 }
                 else {
-                    return ((ManteinancesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Manteinan__idMan__628FA481"])));
                 }
             }
         }
@@ -4630,10 +4566,8 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ManteinanceTypesRow ManteinanceTypesRow {
                 get {
-                    return ((ManteinanceTypesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Manteinan__idMan__619B8048"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Manteinan__idMan__619B8048"]);
                 }
             }
             
@@ -4641,10 +4575,8 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ManteinanceNaturesRow ManteinanceNaturesRow {
                 get {
-                    return ((ManteinanceNaturesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Manteinan__idMan__628FA481"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Manteinan__idMan__628FA481"]);
                 }
             }
             
@@ -4652,10 +4584,8 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UsersRow UsersRow {
                 get {
-                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Manteinan__idUse__6383C8BA"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Manteinan__idUse__6383C8BA"]);
                 }
             }
             
@@ -4788,11 +4718,9 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ManteinancesRow[] GetManteinancesRows() {
-                if ((this.Table.ChildRelations["FK__Manteinan__idMan__619B8048"] == null)) {
                     return new ManteinancesRow[0];
                 }
                 else {
-                    return ((ManteinancesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Manteinan__idMan__619B8048"])));
                 }
             }
         }
@@ -4881,11 +4809,9 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UsersRow[] GetUsersRows() {
-                if ((this.Table.ChildRelations["FK__Users__idRole__59063A47"] == null)) {
                     return new UsersRow[0];
                 }
                 else {
-                    return ((UsersRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Users__idRole__59063A47"])));
                 }
             }
         }
@@ -4999,10 +4925,8 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public RolesRow RolesRow {
                 get {
-                    return ((RolesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Users__idRole__59063A47"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Users__idRole__59063A47"]);
                 }
             }
             
@@ -5010,10 +4934,8 @@ namespace MantenimientoEquipos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UserStatusRow UserStatusRow {
                 get {
-                    return ((UserStatusRow)(this.GetParentRow(this.Table.ParentRelations["FK__Users__idStatus__59FA5E80"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Users__idStatus__59FA5E80"]);
                 }
             }
             
@@ -5080,11 +5002,9 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ManteinancesRow[] GetManteinancesRows() {
-                if ((this.Table.ChildRelations["FK__Manteinan__idUse__6383C8BA"] == null)) {
                     return new ManteinancesRow[0];
                 }
                 else {
-                    return ((ManteinancesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Manteinan__idUse__6383C8BA"])));
                 }
             }
         }
@@ -5145,11 +5065,9 @@ namespace MantenimientoEquipos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UsersRow[] GetUsersRows() {
-                if ((this.Table.ChildRelations["FK__Users__idStatus__59FA5E80"] == null)) {
                     return new UsersRow[0];
                 }
                 else {
-                    return ((UsersRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Users__idStatus__59FA5E80"])));
                 }
             }
         }

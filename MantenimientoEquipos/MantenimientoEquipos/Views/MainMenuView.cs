@@ -1,6 +1,7 @@
 ﻿using MantenimientoEquipos.Views.CRUDDevices;
 using MantenimientoEquipos.Views.CRUDMaintenance;
 using MantenimientoEquipos.Views.CRUDRoles;
+using MantenimientoEquipos.Views.CRUDUsers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,6 +36,23 @@ namespace MantenimientoEquipos.Views
         private void bttRole_Click(object sender, EventArgs e)
         {
             new MenuRolesView().Show();
+            this.Hide();
+        }
+
+        private void bttAreas_Click(object sender, EventArgs e)
+        {
+            new AgregarArea().Show();
+            this.Hide();
+        }
+
+        private void MainMenuView_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bttUsers_Click(object sender, EventArgs e)
+        {
+            new AgregarUsuario().Show();
             this.Hide();
         }
     }

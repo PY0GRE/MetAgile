@@ -91,6 +91,7 @@
             this.bttAreas.TabIndex = 3;
             this.bttAreas.Text = "Áreas";
             this.bttAreas.UseVisualStyleBackColor = false;
+            this.bttAreas.Click += new System.EventHandler(this.bttAreas_Click);
             // 
             // bttUsers
             // 
@@ -105,6 +106,7 @@
             this.bttUsers.TabIndex = 4;
             this.bttUsers.Text = "Usuarios";
             this.bttUsers.UseVisualStyleBackColor = false;
+            this.bttUsers.Click += new System.EventHandler(this.bttUsers_Click);
             // 
             // bttRole
             // 
@@ -135,6 +137,7 @@
             this.Controls.Add(this.estandarTitleLabel1);
             this.Name = "MainMenuView";
             this.Text = "MainMenuView";
+            this.Load += new System.EventHandler(this.MainMenuView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

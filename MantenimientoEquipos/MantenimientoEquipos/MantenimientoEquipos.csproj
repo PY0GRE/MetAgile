@@ -47,10 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBaseConnection.cs" />
-    <Compile Include="MetAgileDataSet1.Designer.cs">
+    <Compile Include="MetAgileDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MetAgileDataSet1.xsd</DependentUpon>
+      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="ModifierComponents\EstadarComboBox.cs">
       <SubType>Component</SubType>
@@ -76,23 +76,23 @@
     <Compile Include="PlacerHolderHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\CRUDAreas\Areas.cs">
+    <Compile Include="Views\CRUDAreas\AgregarArea.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CRUDAreas\Areas.Designer.cs">
-      <DependentUpon>Areas.cs</DependentUpon>
+    <Compile Include="Views\CRUDAreas\AgregarArea.Designer.cs">
+      <DependentUpon>AgregarArea.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CRUDAreas\AreasView.cs">
+    <Compile Include="Views\CRUDAreas\MenuAreas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CRUDAreas\AreasView.Designer.cs">
-      <DependentUpon>AreasView.cs</DependentUpon>
+    <Compile Include="Views\CRUDAreas\MenuAreas.Designer.cs">
+      <DependentUpon>MenuAreas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CRUDAreas\MenuAreasView.cs">
+    <Compile Include="Views\CRUDAreas\UpdateAreasView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CRUDAreas\MenuAreasView.Designer.cs">
-      <DependentUpon>MenuAreasView.cs</DependentUpon>
+    <Compile Include="Views\CRUDAreas\UpdateAreasView.Designer.cs">
+      <DependentUpon>UpdateAreasView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\CRUDDevices\DevicesView.cs">
       <SubType>Form</SubType>
@@ -142,23 +142,23 @@
     <Compile Include="Views\CRUDRoles\UpdateRolesView.Designer.cs">
       <DependentUpon>UpdateRolesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CRUDUsers\MenuUsersView.cs">
+    <Compile Include="Views\CRUDUsers\UpdateUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CRUDUsers\MenuUsersView.Designer.cs">
-      <DependentUpon>MenuUsersView.cs</DependentUpon>
+    <Compile Include="Views\CRUDUsers\UpdateUsuarios.Designer.cs">
+      <DependentUpon>UpdateUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CRUDUsers\UsersView.cs">
+    <Compile Include="Views\CRUDUsers\AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CRUDUsers\UsersView.Designer.cs">
-      <DependentUpon>UsersView.cs</DependentUpon>
+    <Compile Include="Views\CRUDUsers\AgregarUsuario.Designer.cs">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CRUDUsers\Usuarios.cs">
+    <Compile Include="Views\CRUDUsers\MenuUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CRUDUsers\Usuarios.Designer.cs">
-      <DependentUpon>Usuarios.cs</DependentUpon>
+    <Compile Include="Views\CRUDUsers\MenuUsuario.Designer.cs">
+      <DependentUpon>MenuUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\LogInView.cs">
       <SubType>Form</SubType>
@@ -187,23 +187,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\CRUDAreas\Areas.resx">
-      <DependentUpon>Areas.cs</DependentUpon>
+    <EmbeddedResource Include="Views\CRUDAreas\AgregarArea.resx">
+      <DependentUpon>AgregarArea.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CRUDAreas\AreasView.resx">
-      <DependentUpon>AreasView.cs</DependentUpon>
+    <EmbeddedResource Include="Views\CRUDAreas\MenuAreas.resx">
+      <DependentUpon>MenuAreas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDAreas\UpdateAreasView.resx">
+      <DependentUpon>UpdateAreasView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CRUDDevices\DevicesView.resx">
       <DependentUpon>DevicesView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CRUDDevices\MenuDevicesView.resx">
       <DependentUpon>MenuDevicesView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\CRUDMaintenance\MaintenanceUpdate.resx">
-      <DependentUpon>MaintenanceUpdate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\CRUDMaintenance\MaintenanceView.resx">
-      <DependentUpon>MaintenanceView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CRUDMaintenance\MenuMaintenance.resx">
       <DependentUpon>MenuMaintenance.cs</DependentUpon>
@@ -214,8 +211,11 @@
     <EmbeddedResource Include="Views\CRUDRoles\RolesView.resx">
       <DependentUpon>RolesView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CRUDUsers\UsersView.resx">
-      <DependentUpon>UsersView.cs</DependentUpon>
+    <EmbeddedResource Include="Views\CRUDUsers\AgregarUsuario.resx">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDUsers\UpdateUsuarios.resx">
+      <DependentUpon>UpdateUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LogInView.resx">
       <DependentUpon>LogInView.cs</DependentUpon>
@@ -223,9 +223,20 @@
     <EmbeddedResource Include="Views\MainMenuView.resx">
       <DependentUpon>MainMenuView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CRUDUsers\Usuarios.resx">
-      <DependentUpon>Usuarios.cs</DependentUpon>
+    <EmbeddedResource Include="Views\CRUDUsers\MenuUsuario.resx">
+      <DependentUpon>MenuUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="MetAgileDataSet.xsc">
+      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MetAgileDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MetAgileDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MetAgileDataSet.xss">
+      <DependentUpon>MetAgileDataSet.xsd</DependentUpon>
+    </None>
     <None Include="MetAgileDataSet1.xsc">
       <DependentUpon>MetAgileDataSet1.xsd</DependentUpon>
     </None>
