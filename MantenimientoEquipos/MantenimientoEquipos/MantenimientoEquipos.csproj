@@ -148,23 +148,23 @@
     <Compile Include="Views\CRUDRoles\UpdateRolesView.Designer.cs">
       <DependentUpon>UpdateRolesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CRUDUsers\MenuUsersView.cs">
+    <Compile Include="Views\CRUDUsers\UpdateUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CRUDUsers\MenuUsersView.Designer.cs">
-      <DependentUpon>MenuUsersView.cs</DependentUpon>
+    <Compile Include="Views\CRUDUsers\UpdateUsuarios.Designer.cs">
+      <DependentUpon>UpdateUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CRUDUsers\UsersView.cs">
+    <Compile Include="Views\CRUDUsers\AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CRUDUsers\UsersView.Designer.cs">
-      <DependentUpon>UsersView.cs</DependentUpon>
+    <Compile Include="Views\CRUDUsers\AgregarUsuario.Designer.cs">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CRUDUsers\Usuarios.cs">
+    <Compile Include="Views\CRUDUsers\MenuUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CRUDUsers\Usuarios.Designer.cs">
-      <DependentUpon>Usuarios.cs</DependentUpon>
+    <Compile Include="Views\CRUDUsers\MenuUsuario.Designer.cs">
+      <DependentUpon>MenuUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\LogInView.cs">
       <SubType>Form</SubType>
@@ -220,8 +220,11 @@
     <EmbeddedResource Include="Views\CRUDRoles\RolesView.resx">
       <DependentUpon>RolesView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CRUDUsers\UsersView.resx">
-      <DependentUpon>UsersView.cs</DependentUpon>
+    <EmbeddedResource Include="Views\CRUDUsers\AgregarUsuario.resx">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CRUDUsers\UpdateUsuarios.resx">
+      <DependentUpon>UpdateUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LogInView.resx">
       <DependentUpon>LogInView.cs</DependentUpon>
@@ -229,8 +232,8 @@
     <EmbeddedResource Include="Views\MainMenuView.resx">
       <DependentUpon>MainMenuView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CRUDUsers\Usuarios.resx">
-      <DependentUpon>Usuarios.cs</DependentUpon>
+    <EmbeddedResource Include="Views\CRUDUsers\MenuUsuario.resx">
+      <DependentUpon>MenuUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="MetAgileDataSet.xsc">
       <DependentUpon>MetAgileDataSet.xsd</DependentUpon>

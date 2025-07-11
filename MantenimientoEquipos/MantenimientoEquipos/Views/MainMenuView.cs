@@ -1,6 +1,7 @@
 ﻿using MantenimientoEquipos.Views.CRUDAreas;
 using MantenimientoEquipos.Views.CRUDDevices;
 using MantenimientoEquipos.Views.CRUDRoles;
+using MantenimientoEquipos.Views.CRUDUsers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,6 +48,12 @@ namespace MantenimientoEquipos.Views
         private void MainMenuView_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bttUsers_Click(object sender, EventArgs e)
+        {
+            new AgregarUsuario().Show();
+            this.Hide();
         }
     }
 }

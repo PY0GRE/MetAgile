@@ -88,6 +88,11 @@ namespace MantenimientoEquipos.Views.CRUDAreas
             new MenuAreas().Show();
             this.Hide();
         }
+
+        private void txtNombreArea_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

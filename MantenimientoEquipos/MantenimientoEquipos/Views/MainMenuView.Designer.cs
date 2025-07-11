@@ -106,6 +106,7 @@
             this.bttUsers.TabIndex = 4;
             this.bttUsers.Text = "Usuarios";
             this.bttUsers.UseVisualStyleBackColor = false;
+            this.bttUsers.Click += new System.EventHandler(this.bttUsers_Click);
             // 
             // bttRole
             // 

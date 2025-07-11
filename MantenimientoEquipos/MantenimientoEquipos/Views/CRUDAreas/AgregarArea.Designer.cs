@@ -96,6 +96,7 @@
             this.txtNombreArea.Name = "txtNombreArea";
             this.txtNombreArea.Size = new System.Drawing.Size(289, 27);
             this.txtNombreArea.TabIndex = 16;
+            this.txtNombreArea.TextChanged += new System.EventHandler(this.txtNombreArea_TextChanged);
             // 
             // estandarTitleLabel1
             // 
