@@ -107,9 +107,9 @@
             this.estandarLabel3.Location = new System.Drawing.Point(48, 308);
             this.estandarLabel3.Margin = new System.Windows.Forms.Padding(10);
             this.estandarLabel3.Name = "estandarLabel3";
-            this.estandarLabel3.Size = new System.Drawing.Size(44, 22);
+            this.estandarLabel3.Size = new System.Drawing.Size(63, 22);
             this.estandarLabel3.TabIndex = 16;
-            this.estandarLabel3.Text = "Área";
+            this.estandarLabel3.Text = "Estatus";
             // 
             // cbRol
             // 
