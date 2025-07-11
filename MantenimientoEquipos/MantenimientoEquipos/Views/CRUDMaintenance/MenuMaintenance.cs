@@ -53,7 +53,7 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
             {
                 using (SqlConnection cn = new SqlConnection(con))
                 {
-                    SqlCommand cmd = new SqlCommand($"UPDATE Maintenances SET status = 0 WHERE idMaintenance = {txtId.Text}", cn);
+                    SqlCommand cmd = new SqlCommand($"UPDATE Manteinances SET status = 0 WHERE idManteinance = {txtId.Text}", cn);
                     cmd.CommandType = CommandType.Text;
                     cn.Open();
                     cmd.ExecuteNonQuery();
@@ -76,14 +76,14 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
             using (SqlConnection cn = new SqlConnection(con))
             {
                 SqlDataAdapter da = new SqlDataAdapter(
-                    @"SELECT M.idMaintenance, D.serialNumber as 'Dispositivo', U.name as 'Usuario', 
+                    @"SELECT M.idManteinance, D.serialNumber as 'Dispositivo', U.name as 'Usuario', 
                     M.startDate as 'Fecha Inicio', M.lastDate as 'Fecha Fin', 
-                    MT.ManType as 'Tipo', MN.ManNat as 'Naturaleza', 
-                    FROM Maintenances M
+                    MT.name as 'Tipo', MN.name as 'Naturaleza'
+                    FROM Manteinances M
                     JOIN Devices D ON M.idDevice = D.idDevice
                     JOIN Users U ON M.idUser = U.idUser
-                    JOIN MaintenanceTypes MT ON M.idMaintenanceType = MT.idMaintenanceType
-                    JOIN MaintenanceNatures MN ON M.idMaintenanceNature = MN.idMaintenanceNature", cn);
+                    JOIN ManteinanceTypes MT ON M.idManType = MT.idManteinanceType
+                    JOIN ManteinanceNatures MN ON M.idManNat = MN.idManteinanceNature", cn);
 
                 da.SelectCommand.CommandType = CommandType.Text;
                 cn.Open();
@@ -91,9 +91,9 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
                 dtView.DataSource = dt;
                 dtView.ClearSelection();
 
-                if (dtView.Columns.Contains("idMaintenance"))
+                if (dtView.Columns.Contains("idManteinance") )
                 {
-                    dtView.Columns["idMaintenance"].Visible = false;
+                    dtView.Columns[ "idManteinance" ].Visible = false;
                 }
             }
         }
@@ -103,13 +103,47 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
             if (e.RowIndex >= 0)
             {
                 var row = dtView.Rows[e.RowIndex];
-                txtId.Text = row.Cells["idMaintenance"]?.Value?.ToString() ?? string.Empty;
+                txtId.Text = row.Cells[ "idManteinance" ]?.Value?.ToString() ?? string.Empty;
             }
         }
 
         private void MenuMaintenanceView_Load(object sender, EventArgs e)
         {
             dtView.ClearSelection();
+        }
+
+        private void bttAdd_Click_1(object sender, EventArgs e)
+        {
+            new MaintenanceView().Show();
+            this.Hide();
+        }
+
+        private void bttModify_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if ( string.IsNullOrEmpty(txtId.Text) )
+                {
+                    MessageBox.Show("Seleccionar un campo a modificar", "Seleccionar un campo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                new MaintenanceUpdate(txtId.Text).Show();
+                this.Hide();
+            }
+            catch ( Exception )
+            {
+                MessageBox.Show("Seleccionar un campo a modificar", "Seleccionar un campo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void dtView_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if ( e.RowIndex >= 0 )
+            {
+                var row = dtView.Rows[ e.RowIndex ];
+                txtId.Text = row.Cells[ "idManteinance" ]?.Value?.ToString() ?? string.Empty;
+            }
         }
     }
 

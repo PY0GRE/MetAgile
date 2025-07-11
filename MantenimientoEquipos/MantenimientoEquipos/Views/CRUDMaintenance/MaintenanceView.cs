@@ -30,7 +30,7 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
 
         private void InitializePlaceholders()
         {
-            PlaceholderHelper.SetPlaceholder(txtUser, "Nombre del usuario");
+            //PlaceholderHelper.SetPlaceholder(cmbUser, "Nombre del usuario");
         }
 
         private bool ValidateFields()
@@ -41,7 +41,7 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
                 return false;
             }
 
-            if (string.IsNullOrWhiteSpace(txtUser.Text) || txtUser.Text == "Nombre del usuario")
+            if (string.IsNullOrWhiteSpace(cmbUser.Text) || cmbUser.Text == "Nombre del usuario")
             {
                 MessageBox.Show("Por favor, ingrese el nombre del usuario", "Campo Requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
@@ -89,8 +89,9 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
                 {
                     // First get user ID based on name
                     int userId = 0;
-                    using (SqlCommand cmdUser = new SqlCommand($"SELECT idUser FROM Users WHERE name = '{txtUser.Text}'", cn))
+                    //using (SqlCommand cmdUser = new SqlCommand($"SELECT idUser FROM Users WHERE name = '{txtUser.Text}'", cn))
                     {
+                        /*
                         cn.Open();
                         var result = cmdUser.ExecuteScalar();
                         if (result != null)
@@ -102,6 +103,7 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
                             MessageBox.Show("Usuario no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
+                        */
                     }
 
                     SqlCommand cmd = new SqlCommand(
@@ -126,6 +128,64 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
         {
             new MenuMaintenance().Show();
             this.Hide();
+        }
+
+        private void bttCancel_Click_1(object sender, EventArgs e)
+        {
+            new MenuMaintenance().Show();
+            this.Hide();
+        }
+
+        private void bttAccept_Click_1(object sender, EventArgs e)
+        {
+            if ( !ValidateFields() )
+                return;
+
+            try
+            {
+                using ( SqlConnection cn = new SqlConnection(con) )
+                {
+                    // First get user ID based on name
+                    int userId = 0;
+                    using ( SqlCommand cmdUser = new SqlCommand($"SELECT idUser FROM Users WHERE name = '{cmbUser.Text}'", cn) )
+                    {
+                        cn.Open();
+                        var result = cmdUser.ExecuteScalar();
+                        if ( result != null )
+                        {
+                            userId = Convert.ToInt32(result);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Usuario no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
+
+                    SqlCommand cmd = new SqlCommand(
+                        $"INSERT INTO Manteinances(idDevice, idUser, startDate, lastDate, idManType, idManNat) " +
+                        $"VALUES ({cmbDevice.SelectedValue}, {userId}, '{dtpStartDate.Value:yyyy-MM-dd}', " +
+                        $"'{dtpEndDate.Value:yyyy-MM-dd}', {cmbType.SelectedValue}, {cmbNature.SelectedValue})", cn);
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Mantenimiento creado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                this.Hide();
+                new MenuMaintenance().Show();
+            }
+            catch ( Exception ex )
+            {
+                MessageBox.Show("Error al crear el mantenimiento: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void MaintenanceView_Load_1(object sender, EventArgs e)
+        {
+            FillComboBox("SELECT idDevice, serialNumber FROM Devices WHERE idStatus = 1", cmbDevice, "serialNumber", "idDevice");
+            FillComboBox("SELECT idManteinanceType, name FROM ManteinanceTypes", cmbType, "name", "idManteinanceType");
+            FillComboBox("SELECT idManteinanceNature, name FROM ManteinanceNatures", cmbNature, "name", "idManteinanceNature");
+            FillComboBox("SELECT idUser, name FROM Users WHERE idStatus = 1", cmbUser, "name", "idUser");
         }
     }
 

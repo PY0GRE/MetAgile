@@ -26,7 +26,7 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
 
         private void InitializePlaceholders()
         {
-            PlaceholderHelper.SetPlaceholder(txtUser, "Nombre del usuario");
+            //PlaceholderHelper.SetPlaceholder(txtUser, "Nombre del usuario");
         }
 
         private void UpdateMaintenanceView_Load(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
                     cmbDevice.SelectedValue = reader["idDevice"];
 
                     // Usuario
-                    txtUser.Text = reader["userName"].ToString();
+                    cmbUser.Text = reader["userName"].ToString();
 
                     // Fechas
                     dtpStartDate.Value = Convert.ToDateTime(reader["startDate"]);
@@ -97,7 +97,7 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
                 return false;
             }
 
-            if (string.IsNullOrWhiteSpace(txtUser.Text) || txtUser.Text == "Nombre del usuario")
+            if (string.IsNullOrWhiteSpace(cmbUser.Text) || cmbUser.Text == "Nombre del usuario")
             {
                 MessageBox.Show("Ingrese el nombre del usuario", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
@@ -120,18 +120,13 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
             try
             {
                 // Obtener ID del usuario
-                int userId = GetUserId(txtUser.Text);
-                if (userId == -1)
-                {
-                    MessageBox.Show("Usuario no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                
 
                 using (SqlConnection cn = new SqlConnection(con))
                 {
                     string query = $@"UPDATE Maintenances SET 
                                     idDevice = {cmbDevice.SelectedValue},
-                                    idUser = {userId},
+                                    idUser = {cmbUser.SelectedValue},
                                     startDate = '{dtpStartDate.Value:yyyy-MM-dd}',
                                     endDate = '{dtpEndDate.Value:yyyy-MM-dd}',
                                     idMaintenanceType = {cmbType.SelectedValue},
@@ -169,6 +164,62 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
         {
             this.Hide();
             new MenuMaintenance().Show();
+        }
+
+        private void bttAccept_Click_1(object sender, EventArgs e)
+        {
+            if ( !ValidateFields() )
+                return;
+
+            try
+            {
+                // Obtener ID del usuario
+                //int userId = GetUserId(txtUser.Text);
+                //if ( userId == -1 )
+                {
+                  //  MessageBox.Show("Usuario no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //return;
+                }
+
+                using ( SqlConnection cn = new SqlConnection(con) )
+                {
+                    string query = $@"UPDATE Manteinances SET 
+                                    idDevice = {cmbDevice.SelectedValue},
+                                    idUser = {cmbUser.SelectedValue},
+                                    startDate = '{dtpStartDate.Value:yyyy-MM-dd}',
+                                    lastDate = '{dtpEndDate.Value:yyyy-MM-dd}',
+                                    idManType = {cmbType.SelectedValue},
+                                    idManNat = {cmbNature.SelectedValue}
+                                    WHERE idManteinance = {maintenanceId}";
+
+                    SqlCommand cmd = new SqlCommand(query, cn);
+                    cn.Open();
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Mantenimiento actualizado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                this.Hide();
+                new MenuMaintenance().Show();
+            }
+            catch ( Exception ex )
+            {
+                MessageBox.Show($"Error al actualizar: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void bttCancel_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MenuMaintenance().Show();
+        }
+
+        private void MaintenanceUpdate_Load(object sender, EventArgs e)
+        {
+            FillComboBox("SELECT idDevice, serialNumber FROM Devices WHERE idStatus = 1", cmbDevice, "serialNumber", "idDevice");
+            FillComboBox("SELECT idManteinanceType, name FROM ManteinanceTypes", cmbType, "name", "idManteinanceType");
+            FillComboBox("SELECT idManteinanceNature, name FROM ManteinanceNatures", cmbNature, "name", "idManteinanceNature");
+            FillComboBox("SELECT idUser, name FROM Users WHERE idStatus = 1", cmbUser, "name", "idUser");
         }
     }
 }
