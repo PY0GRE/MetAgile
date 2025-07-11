@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitulo = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
+            this.lblTitle = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
             this.lblNombre = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
             this.lblDescripcion = new MantenimientoEquipos.ModifierComponents.EstandarLabel();
-            this.txtNombre = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
-            this.txtDescripcion = new MantenimientoEquipos.ModifierComponents.EstandarRichTextBox();
-            this.btnGuardar = new MantenimientoEquipos.ModifierComponents.EstandarButton();
-            this.btnCancelar = new MantenimientoEquipos.ModifierComponents.EstandarButton();
+            this.txtName = new MantenimientoEquipos.ModifierComponents.EstandarTextBox();
+            this.txtDescription = new MantenimientoEquipos.ModifierComponents.EstandarRichTextBox();
+            this.bttSave = new MantenimientoEquipos.ModifierComponents.EstandarButton();
+            this.bttCancel = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.SuspendLayout();
             // 
-            // lblTitulo
+            // lblTitle
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lblTitulo.Location = new System.Drawing.Point(302, 19);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(10);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(174, 49);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Crear Rol";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblTitle.Location = new System.Drawing.Point(19, 19);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(10);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(174, 49);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Crear Rol";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.Black;
-            this.lblNombre.Location = new System.Drawing.Point(318, 88);
+            this.lblNombre.Location = new System.Drawing.Point(24, 88);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(10);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(124, 22);
@@ -66,75 +66,75 @@
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcion.ForeColor = System.Drawing.Color.Black;
-            this.lblDescripcion.Location = new System.Drawing.Point(337, 207);
+            this.lblDescripcion.Location = new System.Drawing.Point(24, 177);
             this.lblDescripcion.Margin = new System.Windows.Forms.Padding(10);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(95, 22);
             this.lblDescripcion.TabIndex = 2;
             this.lblDescripcion.Text = "Descripción";
             // 
-            // txtNombre
+            // txtName
             // 
-            this.txtNombre.BorderRadius = 20;
-            this.txtNombre.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(332, 130);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(10);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 27);
-            this.txtNombre.TabIndex = 3;
-            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            this.txtName.BorderRadius = 20;
+            this.txtName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(28, 130);
+            this.txtName.Margin = new System.Windows.Forms.Padding(10);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(269, 27);
+            this.txtName.TabIndex = 3;
             // 
-            // txtDescripcion
+            // txtDescription
             // 
-            this.txtDescripcion.BorderRadius = 20;
-            this.txtDescripcion.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(263, 249);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(10);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(251, 96);
-            this.txtDescripcion.TabIndex = 4;
-            this.txtDescripcion.Text = "";
+            this.txtDescription.BorderRadius = 20;
+            this.txtDescription.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescription.Location = new System.Drawing.Point(28, 219);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(10);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(269, 96);
+            this.txtDescription.TabIndex = 4;
+            this.txtDescription.Text = "";
             // 
-            // btnGuardar
+            // bttSave
             // 
-            this.btnGuardar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnGuardar.BorderRadius = 20;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(181, 369);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(84, 35);
-            this.btnGuardar.TabIndex = 5;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.bttSave.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttSave.BorderRadius = 20;
+            this.bttSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttSave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttSave.ForeColor = System.Drawing.Color.White;
+            this.bttSave.Location = new System.Drawing.Point(166, 369);
+            this.bttSave.Name = "bttSave";
+            this.bttSave.Size = new System.Drawing.Size(84, 35);
+            this.bttSave.TabIndex = 5;
+            this.bttSave.Text = "Guardar";
+            this.bttSave.UseVisualStyleBackColor = false;
             // 
-            // btnCancelar
+            // bttCancel
             // 
-            this.btnCancelar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnCancelar.BorderRadius = 20;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(506, 369);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(84, 35);
-            this.btnCancelar.TabIndex = 6;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.bttCancel.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bttCancel.BorderRadius = 20;
+            this.bttCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttCancel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttCancel.ForeColor = System.Drawing.Color.White;
+            this.bttCancel.Location = new System.Drawing.Point(64, 369);
+            this.bttCancel.Name = "bttCancel";
+            this.bttCancel.Size = new System.Drawing.Size(84, 35);
+            this.bttCancel.TabIndex = 6;
+            this.bttCancel.Text = "Cancelar";
+            this.bttCancel.UseVisualStyleBackColor = false;
             // 
             // RolesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.txtNombre);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(397, 450);
+            this.Controls.Add(this.bttCancel);
+            this.Controls.Add(this.bttSave);
+            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.lblTitle);
             this.Name = "RolesView";
             this.Text = "RolesView";
             this.ResumeLayout(false);
@@ -144,12 +144,12 @@
 
         #endregion
 
-        private ModifierComponents.EstandarTitleLabel lblTitulo;
+        private ModifierComponents.EstandarTitleLabel lblTitle;
         private ModifierComponents.EstandarLabel lblNombre;
         private ModifierComponents.EstandarLabel lblDescripcion;
-        private ModifierComponents.EstandarTextBox txtNombre;
-        private ModifierComponents.EstandarRichTextBox txtDescripcion;
-        private ModifierComponents.EstandarButton btnGuardar;
-        private ModifierComponents.EstandarButton btnCancelar;
+        private ModifierComponents.EstandarTextBox txtName;
+        private ModifierComponents.EstandarRichTextBox txtDescription;
+        private ModifierComponents.EstandarButton bttSave;
+        private ModifierComponents.EstandarButton bttCancel;
     }
 }

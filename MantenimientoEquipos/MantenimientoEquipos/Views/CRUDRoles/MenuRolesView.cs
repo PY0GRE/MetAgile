@@ -18,19 +18,6 @@ namespace MantenimientoEquipos.Views.CRUDRoles
 
         }
         string con = DataBaseConnection.ConnectionString;
-        private void btnEditarRol_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MenuRolesView_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bttCancel_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

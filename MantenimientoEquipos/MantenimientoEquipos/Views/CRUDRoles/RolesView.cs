@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,14 +13,14 @@ namespace MantenimientoEquipos.Views.CRUDRoles
 {
     public partial class RolesView : Form
     {
-        public RolesView()
+        string con = DataBaseConnection.ConnectionString;
+
+        public RolesView(string titulo)
         {
             InitializeComponent();
+            this.Text = titulo;
         }
 
-        private void txtNombre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
