@@ -107,6 +107,7 @@
             this.bttSave.TabIndex = 5;
             this.bttSave.Text = "Guardar";
             this.bttSave.UseVisualStyleBackColor = false;
+            this.bttSave.Click += new System.EventHandler(this.bttSave_Click);
             // 
             // bttCancel
             // 
@@ -121,6 +122,7 @@
             this.bttCancel.TabIndex = 6;
             this.bttCancel.Text = "Cancelar";
             this.bttCancel.UseVisualStyleBackColor = false;
+            this.bttCancel.Click += new System.EventHandler(this.bttCancel_Click);
             // 
             // RolesView
             // 
@@ -137,6 +139,7 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "RolesView";
             this.Text = "RolesView";
+            this.Load += new System.EventHandler(this.RolesView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

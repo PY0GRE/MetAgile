@@ -28,17 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.bttCancel = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.bttUpdate = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.bttAdd = new MantenimientoEquipos.ModifierComponents.EstandarButton();
             this.dtView = new MantenimientoEquipos.ModifierComponents.EstandarDataView();
             this.lblTitulo = new MantenimientoEquipos.ModifierComponents.EstandarTitleLabel();
-            this.txtId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(28, 82);
+            this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 15;
+            this.txtId.Visible = false;
             // 
             // bttCancel
             // 
@@ -53,6 +62,7 @@
             this.bttCancel.TabIndex = 14;
             this.bttCancel.Text = "Cancelar";
             this.bttCancel.UseVisualStyleBackColor = false;
+            this.bttCancel.Click += new System.EventHandler(this.bttCancel_Click);
             // 
             // bttUpdate
             // 
@@ -67,6 +77,7 @@
             this.bttUpdate.TabIndex = 8;
             this.bttUpdate.Text = "Editar Rol";
             this.bttUpdate.UseVisualStyleBackColor = false;
+            this.bttUpdate.Click += new System.EventHandler(this.bttUpdate_Click);
             // 
             // bttAdd
             // 
@@ -81,34 +92,35 @@
             this.bttAdd.TabIndex = 6;
             this.bttAdd.Text = "Nuevo Rol";
             this.bttAdd.UseVisualStyleBackColor = false;
+            this.bttAdd.Click += new System.EventHandler(this.bttAdd_Click);
             // 
             // dtView
             // 
             this.dtView.AllowUserToAddRows = false;
             this.dtView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dtView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dtView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtView.BackgroundColor = System.Drawing.Color.White;
             this.dtView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 10F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtView.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtView.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtView.EnableHeadersVisualStyles = false;
             this.dtView.GridColor = System.Drawing.Color.LightGray;
             this.dtView.Location = new System.Drawing.Point(28, 183);
@@ -119,6 +131,7 @@
             this.dtView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtView.Size = new System.Drawing.Size(621, 302);
             this.dtView.TabIndex = 3;
+            this.dtView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtView_CellClick);
             // 
             // lblTitulo
             // 
@@ -131,15 +144,6 @@
             this.lblTitulo.Size = new System.Drawing.Size(307, 49);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Gestion de Roles ";
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(28, 82);
-            this.txtId.Name = "txtId";
-            this.txtId.ReadOnly = true;
-            this.txtId.Size = new System.Drawing.Size(100, 20);
-            this.txtId.TabIndex = 15;
-            this.txtId.Visible = false;
             // 
             // MenuRolesView
             // 
@@ -155,6 +159,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Name = "MenuRolesView";
             this.Text = "MenuRolesView";
+            this.Load += new System.EventHandler(this.MenuRolesView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
