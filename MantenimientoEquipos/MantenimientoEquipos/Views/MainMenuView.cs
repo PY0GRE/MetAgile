@@ -1,4 +1,5 @@
-﻿using MantenimientoEquipos.Views.CRUDDevices;
+﻿using MantenimientoEquipos.Views.CRUDAreas;
+using MantenimientoEquipos.Views.CRUDDevices;
 using MantenimientoEquipos.Views.CRUDMaintenance;
 using MantenimientoEquipos.Views.CRUDRoles;
 using MantenimientoEquipos.Views.CRUDUsers;
