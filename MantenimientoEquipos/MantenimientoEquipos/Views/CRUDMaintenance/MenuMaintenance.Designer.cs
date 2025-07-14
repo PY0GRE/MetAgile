@@ -115,6 +115,7 @@
             this.bttReturn.TabIndex = 10;
             this.bttReturn.Text = "Regresar";
             this.bttReturn.UseVisualStyleBackColor = false;
+            this.bttReturn.Click += new System.EventHandler(this.bttReturn_Click_1);
             // 
             // dtView
             // 
@@ -167,6 +168,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(76, 27);
             this.txtId.TabIndex = 12;
+            this.txtId.Visible = false;
             // 
             // MenuMaintenance
             // 

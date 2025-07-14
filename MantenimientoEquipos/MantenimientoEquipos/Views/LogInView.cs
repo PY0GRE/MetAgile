@@ -55,17 +55,19 @@ namespace MantenimientoEquipos.Views
                 if ( dt.Rows.Count == 1 )
                 {
                     //this.Hide();
-                    String cad = dt.Rows[ 0 ][ 0 ].ToString();
-                    if ( cad == "1" )
+                    string userId = dt.Rows[ 0 ][ 0 ].ToString();
+
+                    if ( userId == "1" ) // Admin
                     {
-                        Console.WriteLine(dt.Rows[ 0 ][ 0 ].ToString());
-                        MainMenuView admin = new MainMenuView();
-                        admin.Show();
+                        MainMenuView view = new MainMenuView();
+                        view.Show();
                         this.Hide();
                     }
-                    else
+                    else // Otro usuario
                     {
-                        MessageBox.Show("Datos Incorrectos");
+                        MainMenuView userView = new MainMenuView();
+                        userView.Show();
+                        this.Hide();
                     }
                 }
             }

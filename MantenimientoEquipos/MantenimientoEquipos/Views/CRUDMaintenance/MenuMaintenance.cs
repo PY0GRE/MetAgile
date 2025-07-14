@@ -145,6 +145,12 @@ namespace MantenimientoEquipos.Views.CRUDMaintenance
                 txtId.Text = row.Cells[ "idManteinance" ]?.Value?.ToString() ?? string.Empty;
             }
         }
+
+        private void bttReturn_Click_1(object sender, EventArgs e)
+        {
+            new MainMenuView().Show();
+            this.Hide();
+        }
     }
 
 
